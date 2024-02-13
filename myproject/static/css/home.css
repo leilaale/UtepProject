@@ -6,3 +6,41 @@ body {
     padding-top: 50px;
 }
 
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header ul
+{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;   
+}
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #ffffff;
+    border-radius: 20px;
+    font-size: 2em;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background: firebrick;
+    color: #fff;
+}
