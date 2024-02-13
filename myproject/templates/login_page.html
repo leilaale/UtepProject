@@ -12,10 +12,10 @@
 <div class="login-container">
     <img src="{{ url_for('static', filename='images/utep_logo.png') }}" alt="UTEP Logo" class="logo">
     <h1>UTEP Single Sign On</h1>
-    <form action="/login" method="post"> 
+    <form action="/main_page"> 
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
-        <a href = "main_page.html" >
+        <a href="/main_page" >
             <button type="submit" class="login-button">Sign In</button>
         </a>
     </form>
