@@ -4,14 +4,16 @@ body {
   background-color: #041E42; 
   color: #041E42;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 1px;
+  padding-bottom: 20px;
+ 
 }
 
 .logo {
   height: fit-content;
   image-rendering: utep_logo;
-  width: 190px;
-  margin-bottom: 80px;
+  width: 150px;
+  margin-bottom: -10px;
 }
 .login-container {
    background-color: #041E42;
@@ -23,10 +25,37 @@ body {
   text-emphasis-color: white;
 }
 html { min-height: 100%; position: relative; }
-.login { overflow: normal; font-size: 12pt; height: 90%; background-color: #011e41; color: #FFFFFF; white-space: nowrap;} /* 50px is the footer height */
+.login { 
+  overflow: normal;
+  font-size: 12pt;
+  height: 90%;
+  background-color: #011e41;
+  color: #FFFFFF;
+  white-space: nowrap;
+} 
 .login a { color: #FFFFFF; }
-.loginTitle { color: #FFFFFF;font-family: system-ui;  font-size: 36px; font-weight: 0 ;  width: 100%; margin-bottom: 30px; white-space: no wrap;}
-.loginTitle:before { color: #FFFFFF; content: 'UTEP Single Sign On'; white-space: nowrap; font-style: normal; }
+
+.loginTitle { 
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-size: 33px;
+  font-weight: 100px;
+  width: 50%;
+  margin-bottom: 30px; 
+  white-space: no wrap;
+  padding-bottom: 10px;
+}
+.loginTitle:before { 
+  width: 300px;
+  color: #FFFFFF;
+  content: 'UTEP Single Sign On';
+  white-space: nowrap; 
+  font-size: 33px;
+  font-family: Arial, sans-serif;
+  padding-bottom: 10px;
+
+
+ }
 
 
 input[type="text"], input[type="password"] {
@@ -37,9 +66,9 @@ input[type="text"], input[type="password"] {
   border-radius: 0px;
 }
 .login-button {
-  /*background-color: #b6b2af; */
+  background-color: #e0dcdb; 
   line-height: 32px;
-  color: #6f6c68;
+  color: #011e41;
   padding: 0px 14px;
   border: 0 solid transparent;
   border-radius: 0px;
@@ -47,7 +76,7 @@ input[type="text"], input[type="password"] {
   text-shadow: #000;
   text-emphasis-color:#000;
   overflow:  visible;
-  margin: 10px;
+  margin: 20px;
 }
 
 .warning-text {
@@ -56,10 +85,16 @@ input[type="text"], input[type="password"] {
 }
 
 
-.loginLogo { background-image: url('images/utep_logo.png'); background-repeat: no-repeat; height: 160px; width: 160px; margin: 60px auto 50px auto; }
+.loginLogo { 
+  background-image: url('images/utep_logo.png');
+  background-repeat: no-repeat; 
+  height: 160px; 
+  width: 140px; 
+  margin: 60px auto 50px auto; }
 
 #forgotPasswordAnchor {
   color: white;
+  font-size: 14px;
   text-decoration: none; 
 }
 
@@ -75,7 +110,7 @@ input[type="text"], input[type="password"] {
 
 .field input[type="password"]
 {
-  width: 65%;
+  width: 75%;
   padding: 8px;
   margin: 2px 0;
   border: 1px solid #333; 
@@ -86,7 +121,7 @@ input[type="text"], input[type="password"] {
   
 
 .field input[type="text"] {
-  width: 65%;
+  width: 75%;
   padding: 8px;
   margin: 2px 0;
   border: 1px solid #333; 
@@ -118,27 +153,37 @@ input[type="text"], input[type="password"] {
 .c {
   display: flex; 
   justify-content: center; 
-  align-items: center; 
+  align-items: left; 
   height: 120px; 
 }
 .c {
-  margin: 0 auto; 
+  text-align:left;
+  margin: 20px, 20px; 
   height: 120px;
 } */
 .c {
   display: flex; 
   justify-content: center; 
-  align-items: center;
-  text-align: center; 
+  align-items: left;
+  text-align: left; 
   height: 120px; 
 }
 
+
 .warning-text {
+
+  text-align: justify;
   color: white;
   font-family: system-ui;
   font-weight: 550;
-  font-size: 14px;
+  font-size: 0.8em;
   padding: 0 10px; 
   margin: 0; 
+  white-space: nowrap;
+}
+.warning-text {
+  text-align: justify;
+  text-align-last: justify; 
+  
 }
 
