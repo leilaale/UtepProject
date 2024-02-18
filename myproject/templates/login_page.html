@@ -1,67 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UTEP Single Sign-On</title>
-<link rel="stylesheet" href="static/css/sign_on.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UTEP Single Sign-On</title>
+        <link rel="stylesheet" href="static/css/sign_on.css">
 
-</head>
 
-<body>
-<img src="{{ url_for('static', filename='images/utep_logo.png') }}" alt="UTEP Logo" class="logo">
-<div class="login-container">
-    
-    <div class="loginTitle"></div>
-    <form  action="/main_page"> 
+    </head>
+    <body>
 
-    <div class="field">
-        <input class="text-right-baseline"
-                type="text"
-                id="usernameUserInput"
-                value=""
-                name="usernameUserInput"
-                tabindex="1"
-                placeholder="Username"
-                required>
-        <input id="username" name="username" type="hidden" value="null">
-    </div>
-
-    <div class="field">
-        <input class="text-right-baseline"
-            type="password"
-            id="password"
-            name="password"
-            value=""
-            autocomplete="off"
-            tabindex="2"
-            placeholder="Password">   
-    </div>
-    
-    <a id="forgotPasswordAnchor" href="https://adminapps.utep.edu/ssoactions/" title="Reset your password or unlock your account.">New Account/Change Password</a>
+    <img src="{{ url_for('static', filename='images/utep_logo.png') }}" alt="UTEP Logo" class="logo"> 
+    <div class="login-container">
         
-    <a href="/main_page" >
+        <div class="loginTitle"></div>
+
+        <form action="/main_page">
+            <div class="field">
+                <input class="text-right-baseline"
+                       type="text"
+                       id="usernameInput"
+                       value=""
+                       name="usernameInput"
+                       tabindex="1"
+                       placeholder="Username"
+                       required>
+                <input id="Username" name="Username" type="hidden" value="null">
+            </div>
+           
+            <div class="field">
+                <input class="text-right-baseline"
+                        type="password"
+                        id="password"
+                        name="password"
+                        value=""
+                        autocomplete="off"
+                        tabindex="2"
+                        placeholder="Password">
+
+            </div>
+          
+            <a id="forgotPasswordAnchor" href="https://adminapps.utep.edu/ssoactions/" title="Reset your password or unlock your account.">New Account/Change Password</a>
             <button type="submit" class="login-button">Sign In</button>
-    </a>
+            <div class="c">
+                
+                <p class="warning-text">
+                    Unauthorized  use  of  this system  is prohibited. Usage  may be subject to  security <br>
+                    testing and monitoring. Misuse is subject to criminal prosecution; and no expectation <br>
+                    of privacy except as otherwise provided by applicable privacy laws. Use of this iteis <br>
+                    subject to UTEP's policies.  Any use of  this  site not  covered by  UTEP  policy  is<br>
+                    prohibited.
+                </p>
 
-    </div class="c">
-        <p class="warning-text">
-        Unauthorized use of this system is prohibited. Usage may be subject to security <br>
-        testing and monitoring. Misuse is subject to criminal prosecution; and no expectation <br>
-        of privacy except as otherwise provided by applicable privacy laws. Use of this site is <br>
-        subject to UTEP's policies. Any use of this site not covered by UTEP policy is<br>
-        prohibited.
+            </div>
+          
+        </form>
 
-        </p> 
+
     </div>
-      
-    </form>
- 
-   
-
-         
-    
-</div>
-
-</body>
+    </body>
 </html>
