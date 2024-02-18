@@ -23,9 +23,9 @@ body {
   text-emphasis-color: white;
 }
 html { min-height: 100%; position: relative; }
-.login { overflow: normal; font-size: 10pt; height: 90%; background-color: #011e41; color: #FFFFFF; white-space: nowrap;} /* 50px is the footer height */
+.login { overflow: normal; font-size: 12pt; height: 90%; background-color: #011e41; color: #FFFFFF; white-space: nowrap;} /* 50px is the footer height */
 .login a { color: #FFFFFF; }
-.loginTitle { color: #FFFFFF;font-family: Arial, Helvetica, sans-serif;  font-size: 30px; font-weight: 0 ;  width: 100%; margin-bottom: 30px; white-space: no wrap;}
+.loginTitle { color: #FFFFFF;font-family: system-ui;  font-size: 36px; font-weight: 0 ;  width: 100%; margin-bottom: 30px; white-space: no wrap;}
 .loginTitle:before { color: #FFFFFF; content: 'UTEP Single Sign On'; white-space: nowrap; font-style: normal; }
 
 
@@ -47,6 +47,7 @@ input[type="text"], input[type="password"] {
   text-shadow: #000;
   text-emphasis-color:#000;
   overflow:  visible;
+  margin: 10px;
 }
 
 .warning-text {
@@ -57,23 +58,24 @@ input[type="text"], input[type="password"] {
 
 .loginLogo { background-image: url('images/utep_logo.png'); background-repeat: no-repeat; height: 160px; width: 160px; margin: 60px auto 50px auto; }
 
-
-
-
-
 #forgotPasswordAnchor {
   color: white;
+  text-decoration: none; 
+}
+
+#forgotPasswordAnchor:hover {
+  text-decoration: underline; 
 }
 
 .field {
   background-color: #041E42; 
-  padding: 10px;
-  margin-bottom: 15px; 
+  padding: 2px;
+  margin-bottom: 2px; 
 }
 
 .field input[type="password"]
 {
-  width: 69%;
+  width: 65%;
   padding: 8px;
   margin: 2px 0;
   border: 1px solid #333; 
@@ -102,7 +104,7 @@ input[type="text"], input[type="password"] {
   color: white; 
   text-decoration: none;
   display: block; 
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .field a:hover {
@@ -110,32 +112,33 @@ input[type="text"], input[type="password"] {
 }
 
 
-/* .warning-text{
-  color: white;
-  max-width: 900px;
-  top: 20px;
-  margin: 20px, auto;
-  position:relative;
-  display: block;
-  text-align: left;
-  padding: 0 10px;
-  font-family:  Arial, Helvetica, sans-serif;
-  white-space: pre-line;
-  font-size: 20;
-  font-weight:590;
+
+
+
+.c {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 120px; 
 }
- */
- .warning-text {
-  
+.c {
+  margin: 0 auto; 
+  height: 120px;
+} */
+.c {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  height: 120px; 
+}
+
+.warning-text {
   color: white;
-  font-family: Arial, Helvetica, sans-serif ;
+  font-family: system-ui;
   font-weight: 550;
-  font-size: 14px; /* Adjust as needed to match the design */
-  max-width: 800px; /* Match the width to the design */
-  margin: 40px auto; /* Increase top and bottom margin as needed */
-  text-align: left; 
-  line-height: 1.0; 
-  padding: 0 10px; /* Horizontal padding */
-  white-space: nowrap;
-  height: fit-content;
+  font-size: 14px;
+  padding: 0 10px; 
+  margin: 0; 
 }
+
