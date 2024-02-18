@@ -6,38 +6,136 @@ body {
   text-align: center;
   padding-top: 50px;
 }
+
 .logo {
+  height: fit-content;
   image-rendering: utep_logo;
-  width: 200px;
-  margin-bottom: 30px;
+  width: 190px;
+  margin-bottom: 80px;
 }
 .login-container {
-  background-color: #041E42;
+   background-color: #041E42;
   width: 300px;
   margin: auto;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(40,30,66,0.5);
+  text-emphasis-color: white;
 }
+html { min-height: 100%; position: relative; }
+.login { overflow: normal; font-size: 10pt; height: 90%; background-color: #011e41; color: #FFFFFF; white-space: nowrap;} /* 50px is the footer height */
+.login a { color: #FFFFFF; }
+.loginTitle { color: #FFFFFF;font-family: Arial, Helvetica, sans-serif;  font-size: 30px; font-weight: 0 ;  width: 100%; margin-bottom: 30px; white-space: no wrap;}
+.loginTitle:before { color: #FFFFFF; content: 'UTEP Single Sign On'; white-space: nowrap; font-style: normal; }
+
+
 input[type="text"], input[type="password"] {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border: 0px solid #ddd;
+  border-radius: 0px;
 }
 .login-button {
-  background-color: #b6b2af; 
-  color: #b6b2af;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+  /*background-color: #b6b2af; */
+  line-height: 32px;
+  color: #6f6c68;
+  padding: 0px 14px;
+  border: 0 solid transparent;
+  border-radius: 0px;
   cursor: pointer;
+  text-shadow: #000;
+  text-emphasis-color:#000;
+  overflow:  visible;
 }
-.login-button:hover {
-  background-color: #b6b2af;
-}
+
 .warning-text {
   color: white;
   font-size: 0.8em;
+}
+
+
+.loginLogo { background-image: url('images/utep_logo.png'); background-repeat: no-repeat; height: 160px; width: 160px; margin: 60px auto 50px auto; }
+
+
+
+
+
+#forgotPasswordAnchor {
+  color: white;
+}
+
+.field {
+  background-color: #041E42; 
+  padding: 10px;
+  margin-bottom: 15px; 
+}
+
+.field input[type="password"]
+{
+  width: 69%;
+  padding: 8px;
+  margin: 2px 0;
+  border: 1px solid #333; 
+  background-color: #fff; 
+  color: #000; 
+
+}
+  
+
+.field input[type="text"] {
+  width: 65%;
+  padding: 8px;
+  margin: 2px 0;
+  border: 1px solid #333; 
+  background-color: #fff;
+  color: #000; 
+}
+
+.field input[type="password"]:focus,
+.field input[type="text"]:focus {
+  border-color: #555; 
+  outline: none;
+}
+
+.field a {
+  color: white; 
+  text-decoration: none;
+  display: block; 
+  margin-top: 10px;
+}
+
+.field a:hover {
+  text-decoration: underline;
+}
+
+
+/* .warning-text{
+  color: white;
+  max-width: 900px;
+  top: 20px;
+  margin: 20px, auto;
+  position:relative;
+  display: block;
+  text-align: left;
+  padding: 0 10px;
+  font-family:  Arial, Helvetica, sans-serif;
+  white-space: pre-line;
+  font-size: 20;
+  font-weight:590;
+}
+ */
+ .warning-text {
+  
+  color: white;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-weight: 550;
+  font-size: 14px; /* Adjust as needed to match the design */
+  max-width: 800px; /* Match the width to the design */
+  margin: 40px auto; /* Increase top and bottom margin as needed */
+  text-align: left; 
+  line-height: 1.0; 
+  padding: 0 10px; /* Horizontal padding */
+  white-space: nowrap;
+  height: fit-content;
 }
