@@ -10,9 +10,7 @@ def login():
 def main_page():
     return render_template("main_page.html")
 
-@app.route("/test_page")
-def test_page():
-        return render_template("test_page.html")
+
 if __name__ == "__main__":
     
     app.run(debug=True)
