@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 from pymongo import MongoClient
-from model import get_pdf_data
 
 app = Flask(__name__)
 client = MongoClient('mongodb+srv://angel:angel123@cluster0.hi3uuvt.mongodb.net/?retryWrites=true&w=majority')
@@ -18,7 +17,7 @@ def main_page():
     
         db.proposals.insert_one({f'{proposal.filename}' : proposal.read()})
 
-        return render_template('main_page.html', upload_success=True, filename=proposal.filename)
+        return render_template('main_page.html', filename=proposal.filename)
     
     return render_template("main_page.html")
 
