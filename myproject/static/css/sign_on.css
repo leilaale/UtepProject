@@ -46,7 +46,6 @@ html { min-height: 100%; position: relative; }
   padding-bottom: 10px;
 }
 .loginTitle:before { 
-  width: 300px;
   color: #FFFFFF;
   content: 'UTEP Single Sign On';
   white-space: nowrap; 

@@ -1,46 +1,59 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #041E42; 
-    color: #041E42;
-    text-align: center;
-    padding-top: 50px;
-}
-
-header
-{
-    position: absolute;
+.header {
+    background-color: #011f41;
     top: 0;
-    left: 0;
+    position: fixed;
+    height: 95px;
     width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10000;
+    display: block;
+    z-index: 9;
+    padding: 0;
 }
-
-header ul
-{
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+.body {
+margin: 0;
 }
-header ul li
-{
-    list-style: none;
-    margin-left: 20px;   
-}
-header ul li a
-{
-    text-decoration: none;
-    padding: 6px 15px;
-    color: #ffffff;
-    border-radius: 20px;
-    font-size: 2em;
-}
-header ul li a:hover,
-header ul li a.active
-{
-    background: firebrick;
+.logo {
+    height: fit-content;
+    image-rendering: utep_logo;
+    width: 100px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    padding: auto;
+  }
+  code {
+    background: #2db34a;
+    border-radius: 6px;
     color: #fff;
+    display: block;
+    font: 14px/24px "Source Code Pro", Inconsolata, "Lucida Console", Terminal, "Courier New", Courier;
+    padding: 24px 15px;
+    text-align: center;
+  }
+  section{
+    
+    margin: 0 1.5% 24px 1.5%;
+    background-color: #011f41;
+    margin-bottom: 80px;
+    width: 200PX;
+
+  }
+  aside{
+    margin: 0 1.5% 24px 1.5%;
+    background-color: #011f41;
+  }
+  footer {
+    margin: 0 1.5% 24px 1.5%;
+  }
+  section {
+    display: inline-block;
+    width: 200;
+    box-sizing: 100px;
+    padding-bottom: 200px;
+  }
+  footer {
+    margin-bottom: 0;
+  }
+  .loginTitle {
+    color: #FFFFFF;
+    font-size: 33px;
+    font-family: Arial, sans-serif;
 }
