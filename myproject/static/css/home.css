@@ -8,6 +8,27 @@
   z-index: 9;
   padding: 0;
 }
+.footer{
+  background-color:  #FF8200;
+  height: 95px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  display: block;
+  text-align: center;
+ 
+  
+
+}
+.header-content {
+
+  height: fit-content;
+  font-size: 37px;
+  position: fixed;
+  display: flex;
+  align-items: top;
+}
 .body {
 margin: 0;
 }
@@ -43,17 +64,22 @@ aside{
 footer {
   margin: 0 1.5% 24px 1.5%;
 }
-section {
-  display: inline-block;
-  width: 200;
-  box-sizing: 100px;
-  padding-bottom: 200px;
+.section {
+  margin: 100px 100% 100px 0%; 
+  background-color: #011f41;
+  width: 300px;
+  
+  padding-bottom: 650px;
+
 }
 footer {
   margin-bottom: 0;
 }
 .loginTitle {
+  padding-top: 25px;
+  padding-left: 20px;
   color: #FFFFFF;
-  font-size: 33px;
+  padding-right: 300px;
+  font-size: 25px;
   font-family: Arial, sans-serif;
 }

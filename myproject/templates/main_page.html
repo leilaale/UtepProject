@@ -15,6 +15,12 @@
                 <div class="loginTitle">THE UNIVERSITY OF TEXAS AT EL PASO</div>
 
             </div>
+            
+            
+
+         
+        </div>
+        <section class="section">
             <h1>Upload PDF</h1>
             {% if request.method == 'GET' %}
             <form action="/main_page" method="post" enctype="multipart/form-data">
@@ -24,11 +30,6 @@
             {% else %} <!-- Document has been uploaded -->
             <p>{{filename}} uploaded</p>
             {% endif %}
-            
-
-         
-        </div>
-        <section class="section">
            
         </section>
 
