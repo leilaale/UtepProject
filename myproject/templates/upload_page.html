@@ -1,0 +1,85 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>UTEP  Administrator</title>
+        <link rel="icon" href="https://cdn.utep.edu/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="static/css/global.css">
+    </head>
+   <body>
+        <nav>
+            <a href="/main_page">
+                <img alt="UTEP logo" src="/static//images/utep_logo.png">
+            </a>
+            <p>The University of Texas at El Paso</p>
+        </nav>
+        <div class="admin_hero">
+            <div class="admin_sidebar">
+                <a href="/user_management" id="user_management">User Management</a>
+                <a href="/main_page" id="upload">Upload</a>
+                <a href="#" id="settings">Settings</a>
+            </div>
+            <div class="admin_body">
+                 
+    <h1>Upload PDF</h1>
+    
+    <form action ="/main_page" method="post" enctype="multipart/form-data">
+        <div class = "drop-zone" >
+            <img class="icon" src ="static/images/fileIcon.png"></img> 
+            <span class = "drop_prompt"> Drag & Drop</span>
+            <span class = "drop_prompt2"> or <span class = "uploadButton"> Browse </span></span>
+            <input type= "file" name ="file" class="drop-zone__input" accept=".pdf" required>
+            <button type="submit">Upload</button>
+        </div>
+    </form>
+    
+
+    <style>
+        #upload {
+            background-color: var(--silver-25);
+        }
+    
+        .drop-zone {
+            max-width: 1300px;
+            height: 500px;
+            padding: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 500;
+            font-size: 20px;
+            cursor: pointer;
+            color: black;
+            border: 3px dashed orange;
+            border-radius: 10px;
+            background-color: var(--silver-25);
+        }
+
+        .drop-zone .icon {
+            size: 20px;
+        }
+
+        .drop-zone .uploadButton {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--orange-100);
+            cursor:pointer;
+        }
+
+        .drop-zone.active {
+            border: 3px solid var(--orange-75); 
+        }
+
+
+    </style>
+
+    
+    <script src = "static/javascript/uploadDoc.js"></script>
+
+            </div>
+        </div>
+    </body>
+</html>

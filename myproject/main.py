@@ -17,7 +17,7 @@ def main_page():
     
         db.proposals.insert_one({f'{proposal.filename}' : proposal.read()})
 
-        return render_template('main_page.html', filename=proposal.filename)
+        return render_template('main_page.html', filename=proposal.filename,preview=True)
     
     return render_template("main_page.html")
 
