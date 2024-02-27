@@ -10,8 +10,7 @@
             <img class="icon" src ="static/images/fileIcon.png"></img> 
             <span class = "drop_prompt"> Drag & Drop</span>
             <span class = "drop_prompt2"> or <span class = "uploadButton"> Browse </span></span>
-            <input type= "file" name ="file" class="drop-zone__input" accept=".pdf" required>
-            <button type="submit">Upload</button>
+            <input type= "file" accept = "application/pdf" hidden>
         </div>
     </form>
     {% else %} <!-- Document has been uploaded -->
@@ -90,7 +89,7 @@
     }
     */
     .drop-zone {
-        max-width: 1300px;
+        max-width: 400px;
         height: 500px;
         padding: 25px;
         display: flex;
@@ -123,6 +122,9 @@
         border: 3px solid var(--orange-75); 
     }
 
+    /* Table where it shows the documents uploaded */
+
+    
     
 </style>
 

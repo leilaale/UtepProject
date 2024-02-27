@@ -1,6 +1,21 @@
 const dragArea = document.querySelector('.drop-zone');
 const dragText = document.querySelector('.drop_prompt');
 
+let button = document.querySelector('.uploadButton');
+let input = document.querySelector('input');
+
+button.onclick = () => {
+    input.click();
+}
+
+input.addEventListener('change', function () {
+    file = this.files;
+    dragArea.classList.add('active');
+    displayFile();
+
+});
+
+
 let file; 
 
 dragArea.addEventListener('dragover', (event) => {
@@ -22,10 +37,17 @@ dragArea.addEventListener('drop', (event) => {
     file = event.dataTransfer.files;
     console.log(file);
     
+    displayFile()
+
+    //console.log("The File is dropped in Drag Area");
+})
+
+
+function displayFile(){
     let fileType = file.type;
     console.log(fileType);
 
-    let validExtensions = ['doc/pdf']
+    let validExtensions = ['application/pdf']
 
     if(validExtensions.includes(fileType)) {
         let fileReader = new FileReader();
@@ -35,9 +57,8 @@ dragArea.addEventListener('drop', (event) => {
         fileReader.readAsDataURL(file);
     
     } else {
-        alert('This file is not a pdf');
+        alert('This file is not supported');
+        dragArea.classList.remove('active');
     }
-
-    //console.log("The File is dropped in Drag Area");
-})
+}
 
