@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>UTEP {% block title %}{% endblock title %}</title>
+        <link rel="icon" href="https://cdn.utep.edu/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="static/css/global.css">
+    </head>
+   <body>
+        <nav>
+            <a href="/main_page">
+                <img alt="UTEP logo" src="{{ url_for('static', filename='/images/utep_logo.png')}}">
+            </a>
+            <p>The University of Texas at El Paso</p>
+        </nav>
+        <div class="admin_hero">
+            <div class="admin_sidebar">
+                <a href="/user_management" id="user_management">User Management</a>
+                <a href="/main_page" id="upload">Upload</a>
+                <a href="#" id="settings">Settings</a>
+            </div>
+            <div class="admin_body">
+                {% block body %}{% endblock body %}
+            </div>
+        </div>
+    </body>
+</html>

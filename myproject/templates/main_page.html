@@ -1,46 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>UTEP Admin</title>
-        <link rel="icon" href="https://cdn.utep.edu/images/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="static/css/home.css">
+{% extends 'admin_template.html'%}
+{% block title%} Administrator{%endblock title%}
+{% block body %}
+<div class="admin-upload">
+    {% if request.method == 'GET' %}
+    <h1>Upload PDF</h1>
+    <form action="/main_page" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".pdf" required>
+        <button type="submit">Upload</button>
+    </form>
+    {% else %} <!-- Document has been uploaded -->
+    <p>{{filename}} uploaded</p>
+    <a class="btn" href="/main_page" style="display:block;margin:auto;width:200px;text-align:center;">Back to Upload</a>
+    {% endif %}
+</div>
+<style>
+    #upload {
+        background-color: var(--silver-25);
+    }
+    h1 {
+        color: var(--blue-100);
+        font-family: "Tungsten A", "Tungsten B", "Open Sans", sans-serif;
+        font-weight: 600;
+        text-align: center;
+    }
+    .admin-upload {
+        background-color: white;
+        height:92%;
+        width:50%;
+        margin: auto;
+        padding:20px;
+        border: 1px solid var(--silver-75);
+        border-radius: 8px;
+    }
+    .admin-upload p {
+        text-align: center;
+        font-size: 17px;
+        margin-top: 50px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px; /* Adjust as needed */
+        margin: auto;
+        margin-top:100px;
+    }
 
-    </head>
-   <body>
-        <div class="header">
-            <div class="header-content">
-                <img src="{{ url_for('static', filename='images/utep_logo.png') }}" alt="UTEP Logo" class="logo">  
-                <div class="loginTitle">THE UNIVERSITY OF TEXAS AT EL PASO</div>
+    input[type="file"] {
+        border: none;
+        color: #333333; /* Text color */
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        transition: background-color 0.2s ease-in-out;
+        width: 100%;
+    }
 
-            </div>
-            
-            
+    input[type="file"]:hover {
+        cursor: pointer;
+    }
 
-         
-        </div>
-        <section class="section">
-            <h1>Upload PDF</h1>
-            {% if request.method == 'GET' %}
-            <form action="/main_page" method="post" enctype="multipart/form-data">
-                <input type="file" name="file" accept=".pdf" required>
-                <button type="submit">Upload</button>
-            </form>
-            {% else %} <!-- Document has been uploaded -->
-            <p>{{filename}} uploaded</p>
-            {% endif %}
-           
-        </section>
+    .btn, button[type="submit"] {
+        border: none;
+        background-color: var(--blue-100); /* Blue color */
+        color: #ffffff; /* Text color */
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 10px 20px;
+        margin-top: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+        cursor: pointer;
+        width: 100%;
+    }
 
-        <div class="footer">
-           
-        </div>
-
-      
-    </body>
-
-  
-    
-    
-</html>
+    .btn:hover, button[type="submit"]:hover {
+        background-color: var(--orange-75); /* Orange color on hover */
+    }
+</style>
+{% endblock body %}
