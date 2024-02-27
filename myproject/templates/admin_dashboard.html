@@ -1,0 +1,169 @@
+{% extends 'admin_template.html'%}
+{% block title%} Administrator{%endblock title%}
+{% block header%}
+<h1>Administrator Dashboard</h1>
+{%endblock header%}
+{% block body %}
+<div class="filter-card-wrapper">
+    <div class="filter-header">
+        <h3>Filters</h3>
+    </div>
+    <div class="filter-card">
+        <p>Data Source</p>
+        <form id="filter-form">
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="status" value="Approved" />Proposals</label>
+              <label><input type="checkbox" name="status" value="Cancelled" />Awards</label>
+              <label><input type="checkbox" name="status" value="Declined" />Publications</label>
+              <label><input type="checkbox" name="status" value="In progress" />Patents</label>
+            </div>
+          </form>
+    </div>
+    <div class="filter-card">
+        <p>Units</p>
+        <form id="filter-form">
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="status" value="Approved" />College of Business</label>
+              <label><input type="checkbox" name="status" value="Cancelled" />College of Business</label>
+              <label><input type="checkbox" name="status" value="Declined" />College of Education</label>
+              <label><input type="checkbox" name="status" value="In progress" />College of Eng.</label>
+            </div>
+          </form>
+    </div>
+    <div class="filter-card">
+        <p>Departments</p>
+        <form id="filter-form">
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="status" value="Approved" />Economics</label>
+              <label><input type="checkbox" name="status" value="Cancelled" />Continuing Education</label>
+              <label><input type="checkbox" name="status" value="Declined" />College of Business</label>
+            </div>
+          </form>
+    </div>
+    <div class="filter-card">
+        <p>Faculty/Staff</p>
+        <form id="filter-form">
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="status" value="Approved" />Salamah, Salamah</label>
+              <label><input type="checkbox" name="status" value="Cancelled" />Wicker, Brian</label>
+              <label><input type="checkbox" name="status" value="Declined" />Mahumd, Hossain</label>
+            </div>
+          </form>
+    </div>
+</div>
+<div class="main-wrapper">
+    <div class="analytics-wrapper">
+        <div class="analytics-card">
+            <h3>3,242</h3>
+            <p>Proposals</p>
+        </div>
+        <div class="analytics-card">
+            <h3>2,279</h3>
+            <p>Fed. Proposals</p>
+        </div>
+        <div class="analytics-card">
+            <h3>1,134</h3>
+            <p>Awards Funded</p>
+        </div>
+        <div class="analytics-card">
+            <h3>34%</h3>
+            <p>Funding Rate</p>
+        </div>
+        <div class="analytics-card">
+            <h3>$449M</h3>
+            <p>Awarded Amt.</p>
+        </div>
+    </div>
+    <div class="strengths-wrapper">
+        <h2>Research Strengths</h2>
+    </div>
+</div>
+
+<style>
+    #dashboard {
+        background-color: var(--blue-75);
+        border-left: 3px solid white;
+    }
+    .filter-card-wrapper {
+        background-color: white;
+        min-width: 200px;
+        height: auto;
+        box-shadow: var(--shadow);
+        margin: 20px;
+        border-radius: 10px;
+        display:flex;
+        flex-direction: column;
+    }
+    .filter-header {
+        padding:0 20px;
+        border-bottom: 1px solid var(--silver-75);
+    }
+    .filter-header h3 {
+        color: var(--blue-75);
+        letter-spacing: 1px;
+        font-weight: normal;
+    }
+    .filter-card {
+        padding:10px;
+        border-bottom: 1px solid var(--silver-75);
+    }
+    .filter-card p {
+        margin: 15px 10px;
+        color: var(--blue-75);
+        font-size: 17px;
+    }
+    .checkbox-group {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+  }
+
+  .checkbox-group label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  .analytics-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    display:flex;
+    justify-content: space-evenly;
+  }
+  .analytics-card {
+    text-align: center;
+    background-color: white;
+    height: 100%;
+    width: auto;
+    min-width: 100px;
+    border-radius: 10px;
+    padding:10px;
+    box-shadow: var(--shadow);
+    color: var(--blue-75);
+  }
+  .main-wrapper {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    padding:15px;
+    
+  }
+  .strengths-wrapper {
+    background-color: white;
+    height: 80%;
+    width: 100%;
+    margin-top:50px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+  }
+  .strengths-wrapper h2 {
+    text-align: center;
+    color: var(--blue-75);
+  }
+</style>
+  
+{%endblock body%}

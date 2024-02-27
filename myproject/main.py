@@ -21,6 +21,13 @@ def main_page():
     
     return render_template("main_page.html")
 
+@app.route("/admin_dashboard")
+def admin_dashboard():
+     return render_template("admin_dashboard.html")
+
+@app.route("/proposal_upload")
+def proposal_upload():
+     return render_template("proposal_upload.html")
 
 @app.route("/user_management")
 def user_management():
