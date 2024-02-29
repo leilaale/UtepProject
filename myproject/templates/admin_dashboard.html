@@ -4,55 +4,56 @@
 <h1>Administrator Dashboard</h1>
 {%endblock header%}
 {% block body %}
-<div class="filter-card-wrapper">
-    <div class="filter-header">
-        <h3>Filters</h3>
+<div style="width:96%;padding:20px 0;display:flex;">
+    <div class="filter-card-wrapper">
+        <div class="filter-header">
+            <h3>Filters</h3>
+        </div>
+        <div class="filter-card">
+            <p>Data Source</p>
+            <form id="filter-form">
+                <div class="checkbox-group">
+                  <label><input type="checkbox" name="status" value="Approved" />Proposals</label>
+                  <label><input type="checkbox" name="status" value="Cancelled" />Awards</label>
+                  <label><input type="checkbox" name="status" value="Declined" />Publications</label>
+                  <label><input type="checkbox" name="status" value="In progress" />Patents</label>
+                </div>
+              </form>
+        </div>
+        <div class="filter-card">
+            <p>Units</p>
+            <form id="filter-form">
+                <div class="checkbox-group">
+                  <label><input type="checkbox" name="status" value="Approved" />College of Business</label>
+                  <label><input type="checkbox" name="status" value="Cancelled" />College of Business</label>
+                  <label><input type="checkbox" name="status" value="Declined" />College of Education</label>
+                  <label><input type="checkbox" name="status" value="In progress" />College of Eng.</label>
+                </div>
+              </form>
+        </div>
+        <div class="filter-card">
+            <p>Departments</p>
+            <form id="filter-form">
+                <div class="checkbox-group">
+                  <label><input type="checkbox" name="status" value="Approved" />Economics</label>
+                  <label><input type="checkbox" name="status" value="Cancelled" />Continuing Education</label>
+                  <label><input type="checkbox" name="status" value="Declined" />College of Business</label>
+                </div>
+              </form>
+        </div>
+        <div class="filter-card">
+            <p>Faculty/Staff</p>
+            <form id="filter-form">
+                <div class="checkbox-group">
+                  <label><input type="checkbox" name="status" value="Approved" />Salamah, Salamah</label>
+                  <label><input type="checkbox" name="status" value="Cancelled" />Wicker, Brian</label>
+                  <label><input type="checkbox" name="status" value="Declined" />Mahumd, Hossain</label>
+                </div>
+              </form>
+        </div>
     </div>
-    <div class="filter-card">
-        <p>Data Source</p>
-        <form id="filter-form">
-            <div class="checkbox-group">
-              <label><input type="checkbox" name="status" value="Approved" />Proposals</label>
-              <label><input type="checkbox" name="status" value="Cancelled" />Awards</label>
-              <label><input type="checkbox" name="status" value="Declined" />Publications</label>
-              <label><input type="checkbox" name="status" value="In progress" />Patents</label>
-            </div>
-          </form>
-    </div>
-    <div class="filter-card">
-        <p>Units</p>
-        <form id="filter-form">
-            <div class="checkbox-group">
-              <label><input type="checkbox" name="status" value="Approved" />College of Business</label>
-              <label><input type="checkbox" name="status" value="Cancelled" />College of Business</label>
-              <label><input type="checkbox" name="status" value="Declined" />College of Education</label>
-              <label><input type="checkbox" name="status" value="In progress" />College of Eng.</label>
-            </div>
-          </form>
-    </div>
-    <div class="filter-card">
-        <p>Departments</p>
-        <form id="filter-form">
-            <div class="checkbox-group">
-              <label><input type="checkbox" name="status" value="Approved" />Economics</label>
-              <label><input type="checkbox" name="status" value="Cancelled" />Continuing Education</label>
-              <label><input type="checkbox" name="status" value="Declined" />College of Business</label>
-            </div>
-          </form>
-    </div>
-    <div class="filter-card">
-        <p>Faculty/Staff</p>
-        <form id="filter-form">
-            <div class="checkbox-group">
-              <label><input type="checkbox" name="status" value="Approved" />Salamah, Salamah</label>
-              <label><input type="checkbox" name="status" value="Cancelled" />Wicker, Brian</label>
-              <label><input type="checkbox" name="status" value="Declined" />Mahumd, Hossain</label>
-            </div>
-          </form>
-    </div>
-</div>
-<div class="main-wrapper">
-    <div class="analytics-wrapper">
+    <div class="dashboard-wrapper">
+      <div class="analytics-wrapper">
         <div class="analytics-card">
             <h3>3,242</h3>
             <p>Proposals</p>
@@ -74,41 +75,51 @@
             <p>Awarded Amt.</p>
         </div>
     </div>
-    <div class="strengths-wrapper">
+    <div class="dashboard-body">
+      <div class="dashboard-header">
         <h2>Research Strengths</h2>
+      </div>
+      
+  </div>
     </div>
 </div>
+<!-- 
+    
+</div> -->
 
 <style>
     #dashboard {
         background-color: var(--blue-75);
         border-left: 3px solid white;
     }
+    .admin-hero {
+        justify-content: center;
+    }
     .filter-card-wrapper {
         background-color: white;
-        min-width: 200px;
+        min-width: 220px;
         height: auto;
         box-shadow: var(--shadow);
-        margin: 20px;
         border-radius: 10px;
         display:flex;
         flex-direction: column;
     }
     .filter-header {
-        padding:0 20px;
+        padding:0 18px;
         border-bottom: 1px solid var(--silver-75);
     }
     .filter-header h3 {
         color: var(--blue-75);
         letter-spacing: 1px;
         font-weight: normal;
+        font-size: 20px;
     }
     .filter-card {
-        padding:10px;
+        padding:10px 15px;
         border-bottom: 1px solid var(--silver-75);
     }
     .filter-card p {
-        margin: 15px 10px;
+        margin: 20px 3px;
         color: var(--blue-75);
         font-size: 17px;
     }
@@ -126,42 +137,55 @@
     margin-bottom: 5px;
     cursor: pointer;
   }
+    /* label {
+      transition: .1s ease-in-out;
+    }
+    label:hover {
+      color: var(--orange-75);
+    } */
   .analytics-wrapper {
-    margin-top: 20px;
     width: 100%;
-    height: 100px;
+    height: 110px;
     display:flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   .analytics-card {
     text-align: center;
     background-color: white;
     height: 100%;
-    width: auto;
-    min-width: 100px;
+    width: 19%;
     border-radius: 10px;
     padding:10px;
     box-shadow: var(--shadow);
     color: var(--blue-75);
   }
-  .main-wrapper {
+  .dashboard-wrapper {
     display:flex;
     flex-direction: column;
     width: 100%;
-    padding:15px;
+    margin-left:10px;
     
   }
-  .strengths-wrapper {
+  .dashboard-body {
     background-color: white;
-    height: 80%;
+    height: 100%;
     width: 100%;
-    margin-top:50px;
+    margin-top:10px;
     margin-right: 20px;
     border-radius: 10px;
     box-shadow: var(--shadow);
   }
-  .strengths-wrapper h2 {
-    text-align: center;
+  .dashboard-header {
+    box-sizing: border-box;
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid var(--silver-75); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dashboard-body h2 {
     color: var(--blue-75);
   }
 </style>

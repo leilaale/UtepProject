@@ -10,23 +10,23 @@ proposals_collection = db['proposals']
 def login():
     return render_template("login_page.html")
 
-@app.route("/main_page", methods=['GET','POST'])
+@app.route("/main_page")
 def main_page():
-    if request.method == 'POST':
-        proposal = request.files['file']
-    
-        db.proposals.insert_one({f'{proposal.filename}' : proposal.read()})
-
-        return render_template('main_page.html', filename=proposal.filename)
-    
     return render_template("main_page.html")
 
 @app.route("/admin_dashboard")
 def admin_dashboard():
      return render_template("admin_dashboard.html")
 
-@app.route("/proposal_upload")
+@app.route("/proposal_upload", methods=['GET','POST'])
 def proposal_upload():
+     if request.method == 'POST':
+        proposal = request.files['file']
+    
+        db.proposals.insert_one({f'{proposal.filename}' : proposal.read()})
+
+        return render_template('proposal_upload.html', filename=proposal.filename)
+     
      return render_template("proposal_upload.html")
 
 @app.route("/user_management")

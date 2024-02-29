@@ -17,6 +17,8 @@
 	/* Other variables */
 	--shadow:0px 3px 6px rgba(0, 0, 0, 0.1); 
 }
+* {box-sizing:border-box;}
+
 html, body {
 	position: relative;
 	width: 100%;
