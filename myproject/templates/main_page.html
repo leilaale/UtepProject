@@ -1,110 +1,65 @@
 {% extends 'admin_template.html'%}
 {% block title%} Administrator{%endblock title%}
+{% block header%}
+<h1>Submit Documents</h1>
+{%endblock header%}
 {% block body %}
 
-<div class = "admin-upload">
-    {% if request.method == 'GET' %}
-    <h1> Upload Files </h1>
-    <form action ="/main_page" method="post" enctype="multipart/form-data">
-        <div class = "drop-zone" >
-            <img class="icon" src ="static/images/fileIcon.png"></img> 
-            <span class = "drop_prompt"> Drag & Drop</span>
-            <span class = "drop_prompt2"> or <span class = "uploadButton"> Browse </span></span>
-            <input type= "file" accept = "application/pdf" hidden>
-        </div>
-    </form>
-    {% else %} <!-- Document has been uploaded -->
-    <p>{{filename}} uploaded</p>
-    <a class="btn" href="/main_page" style="display:block;margin:auto;width:200px;text-align:center;">Back to Upload</a>
-    {% endif %}
+<div class="card-select" onclick="window.location.href = '/proposal_upload'">
+    <div id="header">
+        <h3>Proposal Package</h3>
+    </div>
+    <div>
+        <p>Sample Description</p>
+    </div>
+</div>
+<div class="card-select">
+    <div id="header">
+        <h3>Faculty CV</h3>
+    </div>
+    <div>
+        <p>Sample Description</p>
+    </div>
+</div>
+<div class="card-select">
+    <div id="header">
+        <h3>ORSP DB</h3>
+    </div>
+    <div>
+        <p>Sample Description</p>
+    </div>
+</div>
+<div class="card-select">
+    <div id="header">
+        <h3>Publications</h3>
+    </div>
+    <div>
+        <p>Sample Description</p>
+    </div>
 </div>
 
 <style>
     #upload {
-        background-color: var(--silver-25);
+        background-color: var(--blue-75);
+        border-left: 3px solid white;
     }
-    /*
-    h1 {
-        color: var(--blue-100);
-        font-family: "Tungsten A", "Tungsten B", "Open Sans", sans-serif;
-        font-weight: 600;
-        text-align: center;
-    }
-    .admin-upload {
-        background-color: white;
-        height:92%;
-        width:50%;
-        margin: auto;
-        padding:20px;
-        border: 1px solid var(--silver-75);
-        border-radius: 8px;
-    }
-    .admin-upload p {
-        text-align: center;
-        font-size: 17px;
-        margin-top: 50px;
-    }
-    form {
-        display: flex;
+
+    .admin-hero {
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 200px; 
-        margin: auto;
-        margin-top:100px;
-    }
-    
+        padding-top: 30px;
 
-    input[type="file"] {
-        border: none;
-        color: #333333; 
-        padding: 10px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        transition: background-color 0.2s ease-in-out;
-        width: 100%;
+        align-content: center;
+        padding: 0 30px;
     }
-
-    input[type="file"]:hover {
-        cursor: pointer;
+    .card-select #header {
+        height: 60px;
+        border-bottom: 1px solid var(--silver-50);
     }
-
-    .btn, button[type="submit"] {
-        border: none;
-        background-color: var(--blue-100); 
-        color: #ffffff; 
-        font-weight: 500;
-        font-size: 15px;
-        letter-spacing: 1px;
-        padding: 10px 20px;
-        margin-top: 10px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease-in-out;
-        cursor: pointer;
-        width: 100%;
+    .card-select h3 {
+        color:var(--blue-75);
     }
-
-    .btn:hover, button[type="submit"]:hover {
-        background-color: var(--orange-75); 
-    }
-    */
-    .drop-zone {
-        max-width: 400px;
-        height: 500px;
-        padding: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        font-family: 'Quicksand', sans-serif;
-        font-size: 500;
-        font-size: 20px;
-        cursor: pointer;
-        color: black;
-        border: 3px dashed orange;
-        border-radius: 10px;
-        background-color: var(--silver-25);
+    .card-select p {
+        color: var(--paragraph-color);
     }
 
     .drop-zone .icon {
@@ -127,6 +82,4 @@
     
     
 </style>
-
-<script src = "static/javascript/uploadDoc.js"></script>
-{% endblock body %}
+{%endblock body%}
