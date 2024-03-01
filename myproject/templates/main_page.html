@@ -4,6 +4,7 @@
 <h1>Submit Documents</h1>
 {%endblock header%}
 {% block body %}
+
 <div class="card-select" onclick="window.location.href = '/proposal_upload'">
     <div id="header">
         <h3>Proposal Package</h3>
@@ -36,31 +37,17 @@
         <p>Sample Description</p>
     </div>
 </div>
+
 <style>
     #upload {
         background-color: var(--blue-75);
         border-left: 3px solid white;
     }
+
     .admin-hero {
         flex-direction: column;
         padding-top: 30px;
-    }
-    .card-select {
-        height:130px;
-        width: 90%;
-        box-shadow: var(--shadow);
-        margin: auto;
-        background-color: white;
-        border-radius: 10px;
-        transition: .1s ease-in-out;
-        margin-bottom: 30px;
-    }
-    .card-select:hover {
-        background-color: #f4f4f5;
-        cursor: pointer;
-    }
-    .card-select div {
-        display: flex;
+
         align-content: center;
         padding: 0 30px;
     }
@@ -74,5 +61,25 @@
     .card-select p {
         color: var(--paragraph-color);
     }
+
+    .drop-zone .icon {
+        size: 20px;
+    }
+
+    .drop-zone .uploadButton {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--orange-100);
+        cursor:pointer;
+    }
+
+    .drop-zone.active {
+        border: 3px solid var(--orange-75); 
+    }
+
+    /* Table where it shows the documents uploaded */
+
+    
+    
 </style>
 {%endblock body%}

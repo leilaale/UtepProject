@@ -29,6 +29,7 @@ def proposal_upload():
      
      return render_template("proposal_upload.html")
 
+
 @app.route("/user_management")
 def user_management():
      return render_template("admin_usr_mgmt.html")
