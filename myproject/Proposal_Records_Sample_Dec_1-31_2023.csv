@@ -1,0 +1,362 @@
+PI College,PI Dept,PI Name,PI Part,RA,Cost Share,Awarded,Entry Date,Submitted Thru,Proposal Title,Proposal Amount,Proposal Date,Proposal Start Date,Proposal End Date,ORSP Number,Agency,Flow Down Sponsor,Abstract,CFDA #,Award Date,Start Date,End Date,Award Amount,Average Amount per Year,Source Category,Fed Source Category,Source Name,Submitted Thru Coll,CO-PI 1 Name,CO-PI 1 Dept,CO-PI 1 Part,CO-PI 2 Name,CO-PI 2 Dept,CO-PI 2 Part,CO-PI 3 Name,CO-PI 3 Dept,CO-PI 3 Part,CO-PI 4 Name,CO-PI 4 Dept,CO-PI 4 Part,CO-PI 5 Name,CO-PI 5 Dept,CO-PI 5 Part,CO-PI 6 Name,CO-PI 6 Dept,CO-PI 6 Part,CO-PI 7 Name,CO-PI 7 Dept,CO-PI 7 Part,CO-PI 8 Name,CO-PI 8 Dept,CO-PI 8 Part
+ENGINEERING,COMPUTER SCIENCE,"CHEON, YOONSIK",100%,DANIELLE,No,No,2023-12-20,Computer Science      ,SHF: SMALL: EMPOWERING WITH ASSERTIONS FOR UNIFIED VERIFICATION AND VALIDATION IN EVERYDAY CODING,"$415,315 ",2023-12-20,2024-06-01,2027-05-31,OR20240150,UNIVERSITY OF SOUTHERN CALIFORNIA (UNIV),DEFENSE ADVANCED RESEARCH PROJECTS ,"This project aims to enhance the correctness and reliability of software systems through a holistic, dual-pronged 
+strategy. On the technical front, our research pioneers a unified Verification and Validation (V&V) methodology 
+designed for seamless integration into the daily coding practices of the average programmer. Acknowledging the 
+intricacies of modern software development, spanning mobile applications to mission-critical systems with 
+features like concurrency, parallelism, and AI integration, we extend our commitment to education. Our goal is to 
+create comprehensive undergraduate and graduate courses focused on V&V for software systems. This 
+educational initiative not only aims to instill proficiency in V&V practices but also endeavors to cultivate a 
+positive shift in attitudes, emphasizing the pivotal role of V&V in developing robust and reliable software. In 
+response to the prevalence of vulnerabilities in contemporary society, our project seamlessly integrates diverse 
+V&V techniques, leveraging lightweight tools in harmony with familiar programming languages, especially 
+executable assertions. By elevating seemingly simple elements like assert statements into a robust V&V 
+technique, we aim to bridge existing gaps between isolated methodologies, cultivating a unified framework 
+accessible to average programmers. Importantly, our approach requires no heavy mathematical knowledge or 
+specialized tools. It uses executable assertions as the foundation for unifying various V&V techniques, including 
+runtime checking, unit testing, and formal proof. The strategic integration of assertions and runtime checking, 
+guided by static code analysis and formal proof, results in a more robust verification strategy. By strategically 
+incorporating assertions and runtime checking into unit testing and formal proof processes, developers can 
+establish a comprehensive and mutually reinforcing verification strategy. This integrated approach harnesses the 
+strengths of each technique, ensuring a thorough and reliable means of ensuring software correctness across 
+diverse scenarios. 
+
+Keywords: Assertion, function program verification, formal proof, runtime checking, unit testing, verification and 
+validation.
+
+
+
+
+",12.431,,,,0,0,FEDERAL,DOD,DEFENSE ADVANCED RESEARCH PROJECTS ,ENGINEERING,,,,,,,,,,,,,,,,,,,,,,,,
+EDUCATION,EDU/LEADERSHIP/FOUND,"ESPINOZA, PENELOPE P",50%,DANIELLE,No,No,2023-12-05,Edu/leadership/found  ,STEM EDUCATOR SERIES ON STUDENT INTERACTIONS (SESSI): A VISUAL TOOL TO COUNTER RACIAL MICROAGGRESSIONS AND PROMOTE INCLUSIVITY IN STEM ENVIRONMENTS,"$623,267 ",2023-12-05,2024-08-01,2027-07-31,OR20240146,NATIONAL SCIENCE FOUNDATION (FED),,"This project aims to promote racial equity in STEM education by addressing racial microaggressions in STEM 
+college settings. The objective of the proposed work is to engage in design-based research to develop a tool for 
+countering racial microaggressions with inclusive behaviors in STEM settings. Through a rigorous iterative process, 
+the project will generate a tool distinct from other anti-bias interventions, akin to public health messaging grounded in 
+psychological theories on behavior change. The proposed STEM Educator Series on Student Interactions (SESSI) 
+is a graphic series aimed at educators to model microaffirmations that substitute for microaggressions. A key feature 
+of the proposed tool is its centering of students' authentic experiences. The SESSI is an innovative approach to 
+reducing racial microaggressions in STEM by illustrating students' experiences and, importantly, alternative inclusive 
+behaviors to be readily learned and applied by STEM educators. Quantitative and qualitative data from STEM 
+students and faculty will be collected and applied across several phases of a theory-driven design process. The 
+ultimate goals of the project are STEM educators' behavior change and more inclusive STEM environments that 
+support aspiring Hispanic and Black scientists and engineers. Future research will test the SESSI prototype resulting 
+from the proposed project in terms of its efficacy for reducing microaggressions and increasing inclusive behaviors. 
+The team of Latina researchers, educators, and artists at The University of Texas at El Paso brings to the project 
+years of experience advising, mentoring, and teaching underserved students in a border community.
+
+Keywords: 1) Racial microaggressions; 2) Microaffirmations; 3) Black and Hispanic STEM undergraduates; 4) 
+College STEM educators; 5) Psychological behavior change theories
+",447.076,,,,0,0,FEDERAL,NSF,NATIONAL SCIENCE FOUNDATION (FED),EDUCATION,"Canaba, Karina C",Couri - Campus Office Of Undergraduate Research Initiatives,50%,,,,,,,,,,,,,,,,,,,,,
+LIBERAL ARTS,PSYCHOLOGY,"FIELD, CRAIG A",100%,CLAUDIA,No,No,2023-12-06,Latino Alcohol & Health Disparities Research Center,SRG R01: OPTIMIZING PREGNANCY TREATMENT INTERVENTIONS FOR MOMS (OPTI-MOM 3.0),"$132,145 ",2023-12-01,2024-09-30,2029-09-29,OR20240147,THE UNIVERSITY OF UTAH (UNIV),CDC-NATL CTR FOR INJURY PREVENT AND,"5 Keywords: Opioid Use Disorder, Pregnant Women, Patient Navigation, Randomized Trial, Treatment Interventions
+Pregnant persons continue to shoulder disproportionate health burdens related to the US opioid epidemic. This 
+burden is demonstrated by consistent increases in the number of documented cases of opioid-related diagnosis 
+at delivery as week as elevated rates of HIV/HCV, psychiatric conditions, non-opioid substance use disorder 
+(SUD), social determinants of health-related problems (e.g., food insecurity, housing instability), and neonatal 
+health challenges/care demands. Postpartum return-to-use rates among individuals with OUD who achieved 
+abstinence during pregnancy are as high as 59-99%. Recommended care for pregnant persons with OUD includes 
+medication for opioid use disorder (MOUD, i.e., methadone or buprenorphine) combined with behavioral health 
+services. Yet, current research is unclear regarding which behavioral health services are optimal for promoting 
+MOUD treatment linkage and retention to reduce illicit use and subsequent overdose.
+One promising approach is patient navigation (PN), an evidence-based practice for various chronic 
+medical/psychosocial conditions historically delivered in health systems or clinics. PN addresses barriers to care 
+common among those with OUD, including treatment access, social and/or care services utilization, and 
+motivation to improve health behaviors. Our single clinic proof of concept (N=21) among pregnant persons with 
+OUD resulted in improvements in illicit opioid use, SUD treatment attendance, and depression as well as high 
+study engagement. Our pilot, small-scale (N=102), two health system, randomized trial showed solid signals for 
+PN participants having superior outcomes for MOUD adherence, SUD treatment attendance, illicit opioid use, and 
+overdose compared to Usual Care (UC). These results suggest that Medicaid programs may be optimal 
+community-level partners to scale PN to serve this population. To determine PN efficacy within a Medicaid-
+managed care environment, we propose a fully powered randomized trial to reduce illicit opioid use, promote 
+linkage/retention to MOUD, and reduce opioid overdose. 
+
+
+
+",93.136,,,,0,0,FEDERAL,HHS,CDC-NATL CTR FOR INJURY PREVENT AND,LIBERAL ARTS,,,,,,,,,,,,,,,,,,,,,,,,
+SCIENCE,BIOLOGICAL SCIENCES,"GREENBAUM, ELI B",100%,RAUL,No,No,2023-12-08,Biological Sciences   ,"TRG: COLLABORATIVE PROPOSAL: REVISION OF THE AFRICAN FOREST TREEFROGS (GENUS LEPTOPELIS) WITH PHYLOGENOMICS, DIGITAL ANATOMY, AND INNOVATIVE TEACHING","$504,101 ",2023-12-08,2024-09-01,2028-08-31,OR20240152,NATIONAL SCIENCE FOUNDATION (FED),,"KEYWORDS: forest treefrogs, ecological diversification, ecology
+
+The Afrobatrachia is a radiation of four frog families endemic to Africa that accounts for more than half of
+the continent's currently described anuran species. This project will assess the diversity, evolutionary
+relationships, and conservation status of the most poorly known afrobatrachians, ""Forest Treefrogs"" in the
+genus Leptopelis. Although Forest Treefrogs are a ubiquitous component of the continent's amphibian
+fauna, the group has not been revised since 1973 and then only with morphological data. More narrowlyfocused molecular studies have since 
+clarified 
+some taxonomic uncertainties and revealed additional
+distinct taxa within currently recognized species, but morphological and molecular data have not yet been
+paired to reconcile species-level diversity of the genus. A large-scale revision of the group is urgent
+because conservation assessments are based on outdated taxonomy and many species occur in
+unprotected and rapidly diminishing habitats. The project has five interconnected goals: (1) construct a
+species-level phylogeny of Leptopelis to confirm its monophyly and provide context for investigating
+biogeography and ecological diversification; (2) explore intraspecific molecular and phenotypic diversity of
+widely distributed taxa; (3) characterize osteological variation with respect to evolutionary history and
+ecology; (4) undertake a major monographic revision of Leptopelis; and (5) update IUCN Red List
+assessments for all species recognized in the monograph. The PIs are well-placed to carry out this
+project because of their extensive fieldwork experience and collaborations across sub-Saharan Africa,
+access to thousands of vouchers and tissue samples, and taxonomic expertise. They will leverage these
+assets to train a new generation of U.S. and African herpetologists. Leptopelis are the most species-rich
+and geographically widespread genus of the family Arthroleptidae, and occur in a variety of climatic and
+ecological regions across Africa; thus, they are an ideal candidate for expedited, integrative, and scalable
+genus-level revisions within Afrobatrachia
+",47.074,,,,0,0,FEDERAL,NSF,NATIONAL SCIENCE FOUNDATION (FED),SCIENCE,,,,,,,,,,,,,,,,,,,,,,,,
+SCIENCE,"EARTH, ENVIRON & RESOURCE SCI","GUTIERREZ-JURADO, HUGO A",100%,MARIBEL,No,No,2023-12-15,"Earth, Environ & Resource Sci",SRG - IMPROVING WATER ACCOUNTING IN TRANSBOUNDARY ARID REGIONS BY ASSIMILATING SWOT DATA INTO HYDROLOGIC SWAT MODEL,"$150,991 ",2023-12-15,2024-08-01,2027-07-31,OR20240157,TEXAS A&M UNIVERSITY (TX),NATIONAL AERONAUTICS AND SPACE ADMI,"Keywords: Surface-water availability, SWOT, Water modeling, Water accounting, Remote sensing
+Surface water availability is declining in many arid areas of the world. Particularly, water supply deficiencies 
+influencing water flows and water quality have been reported over the past decades in the Southwestern USA. 
+This region, characterized by prolonged droughts and escalating urban establishments, faces a particularly 
+challenging scenario, impacting reservoir and lake levels and, consequently, sectors like agriculture that heavily 
+rely on surface water.  Also, as ongoing changes in the water availability persist and these regions increase in 
+water demand, limiting water for food production in expanding urban cities, improved data collection on their 
+water bodies is needed. Specifically, water storage in lakes and reservoirs is of critical importance serving various 
+sectors maintaining thriving human populations while building resilience against rising water scarcity. Improved 
+data quality and sources for monitoring reservoir operations for these water bodies can enhance water 
+management practices Also, in several southwestern states water resources cross international borders and give 
+rise to frequent conflicts between countries with disparities in standards and data collection methodologies 
+leading to disagreement over water availability, usage, and distribution. Thus, monitoring these water bodies' 
+inflows and outflows more accurately is an opportunity to significantly improve water management practices This 
+proposal aims to utilize and test the capabilities of the newly launched Surface Water and Ocean Topography 
+mission (SWOT) for improving data collection and quantification of water availability in arid regions bodies and 
+create transparency for water allocation shared between countries.
+",43.001,,,,0,0,FEDERAL,NASA,NATIONAL AERONAUTICS AND SPACE ADMI,SCIENCE,,,,,,,,,,,,,,,,,,,,,,,,
+LIBERAL ARTS,PSYCHOLOGY,"IVANOVA, IVA M",100%,CLAUDIA,No,No,2024-01-18,Psychology            ,SUPPLEMENT SRG: COGNITIVE FACTORS OF BILINGUAL LEXICAL ALIGNMENT,"$28,481 ",2023-12-15,2024-03-01,2025-02-28,OR20240203,NATIONAL SCIENCE FOUNDATION (FED),,"5 Keywords:psychology, bilingualism, language production, conversational alignment, filler words
+Abstract:
+We are investigating alignment to ""like"" in bilinguals in two experiments, described below. The additional funds are requested to allow a student with a 
+disability to conduct another experiment and to publish the study. Method: In two experiments, English speakers read and retold a short story before 
+and after listening to a recorded story that either contained many uses of ""like"" (145), moderate uses (61) or no uses (pre-post design). The 
+experiments also investigate the role of attention for alignment to ""like"". This is done by immersing participants in Google Earth in virtual reality: Half 
+navigated with the hand-held controllers (heavy attentional load), and half remained stationary (light attentional load). Current results: When the 
+attentional load was during comprehension, participants aligned to ""like"" after being exposed to many (as opposed to moderate) ""likes"". In addition, 
+contrary to expectations, they aligned to ""like"" in the heavy load condition, which presumably enhanced their overall attention to the situation and 
+hence to the ""likes"" in the input. When the attentional load was during production, participants similarly aligned to ""like"" after being exposed to many 
+(as opposed to moderate) ""likes"", but only under light and not under heavier load. These results suggest that even aligning to an implicit (and often 
+undesirable) aspect of language such as the filler word ""like"" draws on attentional resources. 
+However, to be able to publish these results, a third experiment is necessary without the virtual reality manipulation. Removing virtual reality will 
+allow to fully interpret the effects of attentional engagement on alignment to ""like"". We request additional funds (20% of the original proposal) to 
+increase the chances that a graduate student with a disability is retained in academia. 
+
+NOTE: This is a supplement for OR20200241. 
+",47.075,,,,0,0,FEDERAL,NSF,NATIONAL SCIENCE FOUNDATION (FED),LIBERAL ARTS,,,,,,,,,,,,,,,,,,,,,,,,
+SCIENCE,PHYSICS,"KIM, EUNJA",65%,MARIBEL,No,No,2023-12-18,Physics               ,SRG - EXPERIMENTAL AND COMPUTATIONAL INVESTIGATION OF FISSION PRODUCT,"$809,602 ",2023-12-18,2024-08-01,2027-07-31,OR20240162,UNIVERSITY OF TEXAS AT SAN ANTONIO (TX),US DEPARTMENT OF ENERGY (FED),"Keywords: Uranium-nitrate, fission products, DFT
+Complementing the indispensable experimental effort, UTEP researchers will lead Thrust 2, carrying out 
+computational modeling and simulations of fission products (FPs) containing Simfuel samples. Thrust 2 consisting of 
+three tasks (i.e., Task 2.1, Task 2, Task 2.3) will help guide and verify the experimental synthesis and characterization 
+(Thrust 1 and Thrust 3) led by UTSA.  
+",81.121,,,,0,0,FEDERAL,DOE,US DEPARTMENT OF ENERGY (FED),SCIENCE,"Pederson, Mark R",Physics               ,35%,,,,,,,,,,,,,,,,,,,,,
+SCIENCE,PHYSICS,"KIM, EUNJA",65%,MARIBEL,No,No,2023-12-20,Physics               ,SRG - MACHINE-LEARNING DRIVEN INVESTIGATION OF THE THERMAL-MECHANICAL-CHEMICAL PROPERTIES OF SPENT NUCLEAR FUEL (SNF) CONTAINING FISSION PRODUCTS,"$800,000 ",2023-12-20,2024-08-01,2027-07-31,OR20240163,US DEPARTMENT OF ENERGY (FED),,"Keywords: Long-term storage, Geological disposal; Spent Nuclear Fuel (SNF); Fission products, Thermal-Mechanical-Chemical 
+properties
+
+We propose to use first-principles methods, combined with state-of-the-art machine-learning methods to systematically predict the TMC parameters 
+of complex FP-containing alteration phases of SNF.  This proposed research will reduce uncertainty associated with the mechanisms and rates of SNF 
+degradation and will enhance geochemical models of these systems, especially in the high-temperature range considered for SNF long-term 
+storage and disposal.
+",81.121,,,,0,0,FEDERAL,DOE,US DEPARTMENT OF ENERGY (FED),SCIENCE,"Pederson, Mark R",Physics               ,35%,,,,,,,,,,,,,,,,,,,,,
+SCIENCE,BIOLOGICAL SCIENCES,"KIRKEN, ROBERT A",50%,CORY,Yes,No,2023-12-18,Border Biomed Res Ctr ,U54: OVERALL BUDGET: BORDER BIOMEDICAL RESOURCE CENTER,"$28,211,596 ",2023-12-17,2024-07-01,2029-06-30,OR20240159,NIH - NATL INST ON MINORITY HEALTH & H D (FED),,"Abstract will be added at a later time. 
+
+Keywords: Pending 
+
+****Cost share for Almeida, Cox, Kenney, and Kirken due to NIH Salary Cap. 
+
+X X X X X X X X X X X X X X X X X X X X X X X X X X X
+",93.307,,,,0,0,FEDERAL,HHS,NIH - NATL INST ON MINORITY HEALTH & H D (FED),SCIENCE,"Kenney, Michael J",Biological Sciences   ,50%,,,,,,,,,,,,,,,,,,,,,
+SCIENCE,"EARTH, ENVIRON & RESOURCE SCI","KUBICKI, JAMES D",100%,MARIBEL,No,No,2024-01-03,"Earth, Environ & Resource Sci",SRG - ADVANCED FILTRATION SYSTEM FOR HIGH-PURITY CRITICAL ELEMENT RECOVERY FROM ELECTRONIC WASTE,"$389,777 ",2023-12-20,2024-06-01,2026-05-31,OR20240169,INFINITE ELEMENTS INC (COMM),US DEPARTMENT OF ENERGY (FED),"keywords: Critical Materials, Critical Metals, Rare Earth Element (REE) Recovery, Bio-Engineering, Critical Element 
+Extraction
+
+Abstract:
+We will employ computational chemistry tools to calculate the binding energy between designed peptides and REEs. 
+Density Functional Theory (DFT) is used to predict the Gibbs free energies (DG) and enthalpies (DH) for peptide-REE 
+interactions. Molecular dynamics (MD) simulations can be performed to demonstrate the stability of the peptide-REE 
+complexes in various environments, further confirming the specificity and durability of the interactions. When the binding 
+energies are significantly lower (indicating stronger interactions) for REEs compared to other metals, these candidate 
+peptides can be produced and assessed for their selectivity for REEs in complex solutions. 
+",81.089,,,,0,0,FEDERAL,DOE,US DEPARTMENT OF ENERGY (FED),SCIENCE,,,,,,,,,,,,,,,,,,,,,,,,
+OFFICE OF THE PROVOST,CTR FOR COMMUNITY ENGAGE,"LUJAN, JENNIFER M.",100%,LUIS,No,No,2023-12-18,Ctr For Community Engage,LA NUBE UTEP COMMUNITY ENGAGEMENT INTERNS,"$8,841 ",2023-12-13,2023-09-01,2024-08-31,OR20240156,LA NUBE (NPO),,"The purpose of this Program is to assist UTEP Students in participating in meaningful
+Internships to supplement their education and encourage student degree completion.
+
+UTEP CCE accordingly, and the Community Partner will work together to ensure that both the
+academic and Internship work experiences arising from the Program are carried out to the
+satisfaction and benefit of the Students, UTEP, and the Community Partner and in
+accordance with applicable laws, rules and regulations
+",,,,,0,0,NON-PROFIT ORGANIZAT,,LA NUBE (NPO),OFFICE OF THE PROVOST,,,,,,,,,,,,,,,,,,,,,,,,
+SCIENCE,PHYSICS,"MANCIU, FELICIA S",100%,MARIBEL,No,No,2023-12-18,Physics               ,SRG - RAMAN SPECTROSCOPIC AND MICROSCOPIC ANALYSIS OF CARBON-BASED MICROELECTRODES,"$20,000 ",2023-12-18,2024-02-01,2025-01-31,OR20240161,MAYO CLINIC (NPO),,"Keywords: Carbon-based quantum materials; Raman spectroscopy; confocal Raman microscopic 
+imaging; thin film; biosensors
+
+In investigations of carbon-based materials, non-destructive Raman spectroscopy is a primary diagnostic 
+tool owing to the broad range of information it can provide to monitor the composition of such materials. It is 
+useful especially for determining the presence of point defects and in semi-quantitatively measuring 
+annealing defects or the presence of contaminants [1-5]. In addition to spectral analysis by Raman 
+spectroscopy, confocal Raman mapping will also be used to directly visualize the local distribution of 
+microelectrode constituents and the presence and location of unwanted defects or residues.
+Since the structural properties of the candidate microelectrodes are essential for achieving the proposed 
+research, detailed characterizations will be performed at The University of Texas at El Paso (UTEP). 
+Aim - Assessment of microelectrodes structural homogeneity through spectroscopic and microscopic 
+analysis. 
+Structural changes associated with the distribution of different constituents (i.e., sp3 or sp2 
+hybridized carbon) throughout the doped diamond thin film and the extent of defects will be analyzed 
+in detail using spectroscopic and microscopic confocal Raman. The functionalization of the substrate 
+surface, which can be of carbon fiber or diamond, and the extent of dopant permeation will be 
+examined, too.
+The results of this research will serve as reference points for further investigations of the microelectrodes to 
+in vitro and in vivo FSCV, MCSWV, and fixed-potential amperometry measurements. The latter analysis will 
+be performed at the Mayo Clinic.
+",,,,,0,0,NON-PROFIT ORGANIZAT,,MAYO CLINIC (NPO),SCIENCE,,,,,,,,,,,,,,,,,,,,,,,,
+ENGINEERING,COLLEGE OF ENGINEERING,"MEISSNER, KENITH E",100%,RAUL,No,Yes,2023-12-22,College Of Engineering,NSF I-CORPS ALL SBIR - OCTOBER - DECEMBER 2023,"$22,500 ",2023-12-22,2023-10-31,2023-12-31,OR20240167,VENTURE WELL (NPO),NATIONAL SCIENCE FOUNDATION (FED),"Aaron Cervantes will serve as a core faculty member for the October - December 2023 NSF ICorps
+virtual course. The specific deliverables related to successful completion of this
+Agreement are included below.
+
+Prepare for the October - December
+2023 NSF I-Corps virtual course in
+accordance with the NSF, VentureWell,
+and I-Corps Faculty guidelines,
+including curriculum and materials
+preparation; securing panelists for the
+""How to Succeed in I-Corps"" Panel,
+naming core teaching team and adjuncts,
+handling site logistics as needed and
+communicating all of the above to
+VentureWell according to the timing laid
+out in the Course Administration
+Handbook.
+",47,2024-01-05,2023-10-31,2023-12-31,22500,22500,FEDERAL,NSF,NATIONAL SCIENCE FOUNDATION (FED),ENGINEERING,,,,,,,,,,,,,,,,,,,,,,,,
+LIBERAL ARTS,SOCIOLOGY/ANTHROPOLOGY,"MORALES, MARIA C",100%,CLAUDIA,No,No,2024-01-03,Sociology/anthropology,SRG: COMPARING EHEALTH BEHAVIORAL INTERVENTIONS FOR CHRONIC INSOMNIA IN DAY LABOR WORKER CENTERS,"$1,707,113 ",2023-12-21,2024-11-01,2029-10-31,OR20240168,PATIENT-CENTERED OUTCOMES RSRCH INST (NPO),,"5 Keywords: chronic insomnia, eHealth behavioral interventions, day laborers, healthy sleep, community settings
+
+As Co-I of the project, Dr. Morales will collaborate with the University of Texas at Austin on survey development, 
+study recruitment, enrollment, protocol implementation, and data collection and analyses. She will also 
+participate in all study-required training and meetings. Dr. Morales, professor of Sociology at The University of 
+Texas at El Paso, will lead the study in the El Paso region. Her responsibilities include oversight of the study, 
+training, recruitment of participants, implementing study protocol, supervising project staff, monitoring the 
+safety of study participants, collecting data, and monitoring the study in the El Paso region. She will attend 
+meetings with the project PI at UT Austin, assist with study-related reports, support manuscript development, 
+and disseminate study findings. 
+
+In addition to ensuring completion of research objectives and project milestones, Dr. Morales will provide an 
+advisory/mentorship role to the project coordinator and research assistants and work directly with community 
+partner The Centro de los Trabajadores Agrículas Fronterizos leadership to provide consultation and assistance 
+with adherence to study procedures and protocols, and any study-related needs that may arise. 
+
+Dr. Morales will receive bi-monthly study progress updates from Dr. Ramirez and will meet with her virtually once 
+per month to discuss overall project development. Deliverables will include (1) enrollment and intervention 
+implementation for all participants, approximately 80, at the El Paso site, (2) co-authorship in manuscripts, and 
+final PCORI reports.  
+
+",,,,,0,0,NON-PROFIT ORGANIZAT,NOCFDA_GRP,PATIENT-CENTERED OUTCOMES RSRCH INST (NPO),LIBERAL ARTS,,,,,,,,,,,,,,,,,,,,,,,,
+SCIENCE,BIOLOGICAL SCIENCES,"MOSCHAK, TRAVIS M",50%,CLAUDIA,No,No,2023-12-18,Biological Sciences   ,SRG: STRUCTURAL AND FUNCTIONAL ROLES OF THE SALIENCE NETWORK IN DISTRESS TOLERANCE AND COCAINE-SEEKING BEHAVIOR,"$95,388 ",2023-12-08,2024-07-01,2026-06-30,OR20240160,NIH - NATIONAL INSTITUTE ON DRUG ABUSE (FED),,"5 Keywords: Distress Tolerance, Cocaine, Dopamine, Insula, Medial Prefrontal Cortex
+
+The inability to tolerate the psychological distress experienced while in pursuit of a challenging goal (referred to as low distress tolerance, DT) is 
+characteristic of substance users and is predictive of eventual relapse. The overall objective of this application is to employ a rodent model of DT 
+developed in our laboratory to examine underlying neural circuitry mediating DT. Understanding neural circuits mediating DT are timely and highly 
+significant since targeting DT has recently become a promising treatment strategy for humans suffering from substance use disorders
+",93.307,,,,0,0,FEDERAL,HHS,NIH - NATIONAL INSTITUTE ON DRUG ABUSE (FED),SCIENCE,,,,,,,,,,,,,,,,,,,,,,,,
+LIBERAL ARTS,COMMUNICATION,"PEREZ, FRANK G",100%,CORY,No,No,2023-12-07,Communication         ,"THREE PILLARS OF TRUST: FOSTERING EFFECTIVE INTERCULTURAL COMMUNICATION AT RURAL HOSPITALS ALONG THE TEXAS-MEXICO BORDER VIA AESTHETICS, FOOD WAYS, A","$73,300 ",2023-12-07,2024-01-01,2024-08-31,OR20240149,TEXAS STATE OFFICE OF RURAL HEALTH (TX),,"Objective: Help rural hospital staff better and more appropriately engage with Hispanic audiences/patients 
+throughout the Texas-Mexico border region from a culturally sensitive perspective. Develop three two- to three-hour 
+webinar training sessions and ancillary support materials for state healthcare professionals in hospitals to improve 
+their binational communication skills.  
+
+
+
+Deliverables:
+·	Webinar series
+o	Three webinar sessions, each of one hour duration, once every three months (see Appendix A 
+for sample webinar format).
+·	Health terms dictionary: Intake terminology and related vocabulary.
+·	Translation/development of English-Spanish intake forms/data sheets/discharge forms (e.g., Instructions 
+with proper, commonly understood terms used by Mexican/Americans.).
+·	Dietary intake suggestions for menu of nutrition program based on Mexican foods. These would be 
+general but would need to be reviewed by a dietitian or other health professional to assess what is 
+appropriate for individual patients. 
+·	Pre- and post-assessment of program to measure results and to suggest best practices.
+",,,,,0,0,STATE OF TEXAS,,TEXAS STATE OFFICE OF RURAL HEALTH (TX),LIBERAL ARTS,,,,,,,,,,,,,,,,,,,,,,,,
+ENGINEERING,ELECT & COMP ENGR,"ROBERTS, ROBERT C",100%,RAUL,No,Yes,2023-12-13,Elect & Comp Engr     ,MATERIALS DEVELOPMENT FOR PRINTED ELECTRONICS,"$100,000 ",2023-12-13,2023-12-01,2024-08-30,OR20240154,NATIONAL NUCLEAR SECURITY ADMINISTRATION (FED),"HONEYWELL FEDERAL MANUFACT  & TECH,","The primary objective of this project is to (1) build on work done in FY23 regarding developing inkjet ink 
+acceptance testing and (2) develop a conductive, inkjet printable MXene ink. Both objectives will be worked 
+simultaneously. 
+Copper (Cu) nanoparticle ink will be utilized for this study because of its high conductivity and relatively low 
+cost. In FY23, Prof. Roberts and team developed printing recipes for COTS Cu nanoparticle inks using the 
+newer Samba G3L heads on the Fujifilm Dimatix. In Fy24, we will continue to analyze possible acceptance 
+testing methodologies for COTS Cu nanoparticle inks including testing like impedance spectroscopy, 4-point 
+probe structures, and RF reflectometry. 
+",81,2024-01-12,2023-12-01,2024-08-30,100000,100000,COMMERCIAL BUSINESS ,,"HONEYWELL FEDERAL MANUFACT  & TECH,",ENGINEERING,,,,,,,,,,,,,,,,,,,,,,,,
+ENGINEERING,ELECT & COMP ENGR,"SANG, YUANRUI",40%,RAUL,No,No,2023-12-04,Elect & Comp Engr     ,STR: HISPANIC ALLIANCE FOR CLEAN ENERGY EDUCATION AND RESEARCH (HACEER),"$4,071,616 ",2023-12-04,2024-02-01,2027-01-31,OR20240145,MSI STEM RESEARCH & DEVELOPMENT CONSORTI (NPO),US DEPARTMENT OF ENERGY (FED),"KEYWORDS: greenhouse, energy industry, advance computing, environmental engineering
+
+To achieve net-zero greenhouse gas emissions by 2050, there are strong needs to deploy clean generation,
+build enabling infrastructure, and develop advanced tools to facilitate the analysis, operations, and planning
+for clean energy systems. These needs create a high demand for a skilled workforce in the clean energy
+industry. The Southwest and Puerto Rico have the highest solar energy potential in the U.S.; in recent years,
+Texas, New Mexico, and Puerto Rico have seen the nation's highest increases in energy industry jobs. The
+project aims to strategically train the students and build the workforce development capacity at six
+Hispanic-Serving Institutions (HSI) in Texas, New Mexico, and Puerto Rico. Regarding student training,
+these institutions will develop programs to increase students' awareness of career paths in the energy
+industry, expand their knowledge through systematically designed curricula on power and energy, expose
+students to cutting-edge clean energy research and hands-on problems, and enhance their leadership skills.
+For the workforce development capacity building, the six institutions will share expertise in electrical
+engineering, advanced computing, environmental engineering, and education to collaborate on research,
+develop and share course materials, and jointly mentor junior faculty members. Additionally, a plan is
+established to sustain the project's impact beyond its period of performance and its reach beyond the six
+institutions. This project will advance clean energy workforce development in the Southwest, Puerto Rico,
+and beyond, training a sustainable workforce for the growing clean energy industry across the U.S.
+",81,,,,0,0,FEDERAL,DOE,US DEPARTMENT OF ENERGY (FED),ENGINEERING,"Velez-reyes, Miguel",Elect & Comp Engr     ,15%,"Santiago, Ivonne",Civil Engineering     ,15%,"Mcgarry, Michael",Elect & Comp Engr     ,15%,"Chavez, Jennifer C",Center For Trans. Infr. Sys,15%,,,,,,,,,,,,
+SCIENCE,BIOLOGICAL SCIENCES,"SEYMOURE, BRETT M",80%,DANIEL,No,No,2023-12-15,Biological Sciences   ,MESOPREDATORS IN THE DARK: EFFECTS OF LIGHT ON PREDATOR-PREY BEHAVIOR,"$1,382,405 ",2023-12-15,2024-06-01,2028-05-31,OR20240158,NATIONAL SCIENCE FOUNDATION (FED),,"Ecosystems are organized by natural light-dark cycles, which have been stable over evolutionary time scales. Artificial 
+light induced disruptions of those cycles affect the structure and function of multiple levels of biodiversity. As artificial 
+light continues to increase, it is crucial to understand how animals are altering their behaviors. Artificial lighting is 
+introducing both intensities and wavelengths of light that mask or destroy the natural light environments upon which 
+organisms depend for carrying out biological functions such as foraging, habitat selection, and predator avoidance. To 
+cope with these novel, artificial conditions, species must modify their behaviors, possibly leading to shifts in predator-
+prey interactions. Nocturnal ambush mesopredators are central to these interactions and rely upon darkness for hunting 
+and concealment, making them particularly likely to alter their behavior under the constant presence of artificial light. 
+Rattlesnakes, with their nocturnal habits, ambush foraging, and dependence upon crypsis for concealment, offer an ideal 
+system to investigate the impact of both natural and artificial light on ambush mesopredators. Our proposed project uses 
+rattlesnakes and associated species (e.g. rodents, coyotes, owls) to evaluate light environment effects on predator-prey 
+behaviors and dynamics through three aims: 1) spatiotemporal dynamics of predator-prey interactions, 2) altered 
+crypsis, and 3) foraging success. We propose eight experiments including in situ organismal tracking, field 
+manipulations, and controlled mesocosm experiments. The 2020 World Biodiversity forum posed 11 pressing research 
+questions on how artificial light affects biodiversity and organisms. Our proposed research will contribute answers to 
+seven of 11 important themes. Numerous recent reviews and perspectives have called for understanding 
+how natural light drives organismal spatiotemporal dynamics and the consequences of artificial light. The results of 
+these experiments will contribute to understanding how landscape alterations of the visual environment modifies 
+behaviors and morphology of prey, mesopredators, and apex predators in undisturbed Chihuahuan Desert.
+",47.074,,,,0,0,FEDERAL,NSF,NATIONAL SCIENCE FOUNDATION (FED),SCIENCE,"Mata Silva, Vicente",Biological Sciences   ,20%,,,,,,,,,,,,,,,,,,,,,
+SCIENCE,CHEMISTRY,"SHARIFAN, HAMIDREZA",100%,DANIEL,No,No,2023-12-01,Chemistry             ,BIOCHAR-ASSISTED REMEDIATION OF PFAS UPTAKE IN HIGH-RISK DIETARY PLANTS,"$1,199,668 ",2023-12-01,2024-09-01,2027-08-31,OR20240142,US ENVIRONMENTAL PROTECTION AGENCY (FED),,"Keywords: PFOA, Exposure, Leachate, Chemical Transport
+
+This research will support the Goal 6: Safeguard and Revitalize Communities, Objective 6.2:
+Reduce Waste and Prevent Environmental Contamination; and Goal 7: Ensure Safety of
+Chemicals for People and the Environment, 7.2: Promote Pollution Prevention, of the Plan. The
+specific objective of the research will focus on mitigating PFAS exposure from the food supply
+through the exploration of different biochar applications as soil amendment to reduce PFAS
+bioaccumulation in plants in agricultural settings to promote farm viability and public health. The
+proposed research aims to enhance cost-effective solutions and management strategies tailored
+to address PFAS concerns in agricultural environments. This includes developing strategies
+applicable to farms dealing with high volumes of water or soil characterized by relatively low
+PFAS concentrations.
+",66.509,,,,0,0,FEDERAL,EPA,US ENVIRONMENTAL PROTECTION AGENCY (FED),SCIENCE,,,,,,,,,,,,,,,,,,,,,,,,
+SCIENCE,BIOLOGICAL SCIENCES,"TWEEDIE, CRAIG E",34%,RAUL,No,No,2023-12-13,Biological Sciences   ,TRG: SUSTAINING THE ITEX-AON TO ADVANCE UNDERSTANDING OF RECOGNIZED AND EMERGING CHANGES IN ARCTIC TUNDRA ECOSYSTEMS,"$1,646,889 ",2023-12-13,2025-01-01,2029-12-31,OR20240155,NATIONAL SCIENCE FOUNDATION (FED),,"KEYWORDS: Artic research, phenocam imagery, data-streams, carbon exchange
+
+The goal of this program is to advance understanding of the recognized and emerging changes occurring across Arctic tundra ecosystems by 
+sustaining and enhancing the value of the datasets collected by the International Tundra Experiment - Arctic Observatory Network (ITEX-AON).  
+Specifically, this proposal will: sustain the data-streams at the primary ITEX-AON sites near Toolik Lake, Imnavait Creek, Utqiagvik (formerly Barrow), 
+and Atqasuk; expand observations of carbon dynamics to include Thule and Utqiagvik; collaborate closely with the Circumarctic Active Layer 
+Monitoring (CALM) network to understand the interactions between snow cover, thaw, subsidence, vegetation change, and carbon exchange at 
+multiple sites across Arctic Alaska; support the archival of observations across the ITEX network and continue syntheses focused on phenocam 
+imagery; and increase scientific literacy by partnering with community organizations and K-12 teachers.  
+",47.050 ,,,,0,0,FEDERAL,NSF,NATIONAL SCIENCE FOUNDATION (FED),SCIENCE,"Vargas, Sergio A",Biological Sciences   ,33%,,,,,,,,,,,,,,,,,,,,,
+HEALTH SCIENCES,PUBLIC HEALTH SCIENCES,"UMUCU, EMRE",55%,BELINDA,No,Yes,2023-12-07,Chs Reached,I-REACH RURAL VETERANS,"$350,000 ",2023-12-07,2023-10-01,2025-09-30,OR20240048,MICHIGAN STATE UNIVERSITY (UNIV),DHHS - HEALTH RESOURCES AND SERVICE,"This project entitled ""Improving Rural Enrollment, ACcess, and Health in Rural Veterans (I-REACH Rural Veterans)"" aims to implement Veteran-
+oriented and culturally-sensitive strategies to improve capacity of critical access hospitals and other rural health organizations to provide services to 
+meet the needs for rural Veterans, including underserved Veterans, and caregivers (RVUVC).
+",93.241,2023-12-07,2023-08-01,2025-07-31,350000,175000,FEDERAL,HHS,DHHS - HEALTH RESOURCES AND SERVICE,HEALTH SCIENCES,"Lee, Yun-pai",Rehabilitative-scienc ,45%,,,,,,,,,,,,,,,,,,,,,
+ENGINEERING,ELECT & COMP ENGR,"WANG, SHIAN",100%,RAUL,Yes,No,2023-12-22,Elect & Comp Engr     ,ENABLING EMERGING MOBILITY IN MIXED VEHICLE TRAFFIC VIA SOCIALLY COMPLIANT CONTROL OF AUTONOMY,"$10,000 ",2023-12-22,2024-06-01,2025-05-31,OR20240166,OAK RIDGE ASSOCIATED UNIVERSITIES (NPO),,"
+ Research goals. This project aims to make early attempts to integrate a useful metric of social psychology, 
+called social value orientation (SVO) [5, 6], into emerging mobility systems for the altruistic control design of 
+AVs. The SVO of an AV enables it to influence the behavior of following HVs, a crucial aspect as AVs behaving 
+in a socially compliant manner allow human drivers to understand their actions and respond appropriately. 
+Specifically, the research will (i) collect naturalistic driving data at the trajectory level to analyze the 
+comprehensive car-following behavior of ACC vehicles through field experiments, (ii) calibrate microscopic 
+car-following models to describe the behavior of AVs with low levels of driving automation, (iii) integrate SVO 
+into AV operation for socially compliant control design, and (iv) implement the novel AV control algorithms in 
+simulation to conduct prospective analyses and explore potential implications on mixed vehicle traffic, including 
+the fundamental diagram, traffic safety, and emissions impacts. This research aims to prepare transportation 
+practitioners and future graduates for emerging technologies in vehicle automation. The ultimate goal is to 
+expedite the transfer of knowledge gained from this research into real-world transportation engineering 
+practices. Furthermore, this study will provide invaluable empirical datasets, models, and vehicle control 
+algorithms to benefit the broader community of transportation and automotive researchers and practitioners. 
+",,,,,0,0,NON-PROFIT ORGANIZAT,,OAK RIDGE ASSOCIATED UNIVERSITIES (NPO),ENGINEERING,,,,,,,,,,,,,,,,,,,,,,,,
+OFFICE OF THE PROVOST,OFFICE OF THE PROVOST,"WIEBE, JOHN S",100%,CORY,No,No,2023-12-22,Office Of The Provost ,SUPPLEMENT: U54 FIRST: TRAVEL SUPPLEMENT,"$100,164 ",2023-12-22,2024-01-01,2028-05-31,OR20240165,NIH - OFFICE OF STRATEGIC COORDINATION (FED),,"UTEP FIRST seeks administrative supplement support for travel for the FIRST Faculty Cohort to attend the 
+Faculty Institutional Recruitment for Sustainable Transformation (FIRST) Program Annual Grantees 
+Conference in years 2-5 of the grant.  The requested grant funding will contribute to the professional 
+development of the FIRST faculty cohort as well as foster peer-to-peer collaborations and the UTEP 
+Community of Practice.  This additional supplemental request is essential to maximize the impact of our 
+program, especially given the size of our institution and the need for support for the faculty development 
+activities planned for the UTEP cohort.
+",93.31,,,,0,0,FEDERAL,HHS,NIH - OFFICE OF STRATEGIC COORDINATION (FED),OFFICE OF THE PROVOST,,,,,,,,,,,,,,,,,,,,,,,,
