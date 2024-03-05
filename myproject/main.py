@@ -5,9 +5,12 @@ import Word
 import keyBertExtraction as kb
 
 app = Flask(__name__)
+
 #generate key everytime since users will be stored locally 
 app.secret_key = secrets.token_hex(16)
 
+
+# Database connection
 client = MongoClient('mongodb+srv://angel:angel123@cluster0.hi3uuvt.mongodb.net/?retryWrites=true&w=majority')
 db = client['test_db']
 proposals_collection = db['proposals']
