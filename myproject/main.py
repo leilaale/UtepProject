@@ -1,18 +1,14 @@
 from flask import Flask, render_template, request
 from pymongo import MongoClient
-import sample
+import Word
 import keyBertExtraction as kb
-import json
 
 app = Flask(__name__)
 client = MongoClient('mongodb+srv://angel:angel123@cluster0.hi3uuvt.mongodb.net/?retryWrites=true&w=majority')
 db = client['test_db']
 proposals_collection = db['proposals']
-keywords_collection = db['test_collection']
-keywords = {}
-
-#r = sample.Keyword('random', 'test')
-#keywords_collection.insert_one({'random' : json.dumps(r.__dict__)})
+keywords_collection = db['keywords']
+file_collection = db['files']
 
 @app.route("/")
 def login():
@@ -28,27 +24,34 @@ def admin_dashboard():
 
 @app.route("/proposal_upload", methods=['GET','POST'])
 def proposal_upload():
+     
      if request.method == 'POST':
         proposal = request.files['file']
         
         key_list = kb.keywordExtraction(proposal)
         
         for word in key_list:
-             
-          if word not in keywords:   
-               newKey = sample.Keyword(word, proposal)
-               keywords[word] = newKey
-               keywords_collection.insert_one({word : json.dumps(newKey.__dict__)})
+          
+          word_Exist = keywords_collection.count_documents({"word" : word})
+          
+          if word_Exist == 0:   
+               newKey = Word.Word(word, proposal.filename)
+               keywords_collection.insert_one({"word" : newKey.word, "appearances": newKey.appearances, "listOfFiles": newKey.listOfFiles})
           else: 
-               keywords[word].searchFiles(proposal)
-               #keywords[word].appearances += 1
-               #keywords[word].listOfFiles.append(proposal)
-        
-        
-        print("HERE")
-        print(keywords.keys())
-        
-        #db.proposals.insert_one({f'{proposal.filename}' : sample.File(f'{proposal.filename}', proposal.read(), key_list)})
+               
+               # This updates number of appearances              
+               q = {"word" : word}
+               getWord = keywords_collection.find_one(q)
+               n = getWord['appearances']
+               newValues = { "$set": { "appearances": n+1 } }
+               keywords_collection.update_one(q, newValues)
+               
+               # Updates listOfFiles Array 
+               keywords_collection.update_one({"word" : word}, { "$push" : { "listOfFiles" : proposal.filename}})
+               
+      
+        file_collection.insert_one({f'proposal.filename' : proposal.read()})
+        file_collection.insert_one({"File Name": proposal.filename, "Keyword List": key_list, "PDF": proposal.read()})
         
         return render_template('proposal_upload.html', filename=proposal.filename)
      

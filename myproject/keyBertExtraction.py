@@ -35,10 +35,11 @@ def keywordExtraction(file):
     for i, memo_keywords in enumerate(memo_keywords_df):
         #print("-"*40 + "\nmemo_ #{}: top {} keywords (ngram range 1-{})".format(i, n_keywords, ngram))
         #print('HERE')
-        #print(memo_keywords)
+        print(memo_keywords)
         for keyword in memo_keywords:
             #print(keyword[0])
-            keywords.append(keyword[0])
+            if keyword not in keywords:
+                keywords.append(keyword[0])
 
     return keywords
 
