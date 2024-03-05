@@ -1,0 +1,63 @@
+{% extends 'admin_template.html'%}
+{% block title%} Administrator{%endblock title%}
+{% block header%}
+<h1>Spider Diagram</h1>
+{%endblock header%}
+{% block body %}
+
+
+<div class="new-button" onclick="window.location.href = '/spider_diagram'">
+    <div class="button-content">
+        <h3>Generate Spider Diagram</h3>
+    </div>
+</div>
+
+<style>
+    #diagram {
+        background-color: var(--blue-75);
+        border-left: 3px solid white;
+    }
+
+    .new-button {
+        background-color: var(--blue-75);
+        border-left: 3px solid white;
+        box-shadow: var(--shadow);
+        margin: auto;
+        /* This centers the button horizontally */
+        border-radius: 10px;
+        transition: .1s ease-in-out;
+        margin-bottom: 30px;
+        cursor: pointer;
+        width: fit-content;
+        /* Ensures button width fits its content */
+    }
+
+    /* Add the following CSS to center the button vertically */
+    .new-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .new-button:hover {
+        background-color: gray;
+    }
+
+    .new-button div {
+        display: flex;
+        align-content: center;
+        padding: 0 15px;
+    }
+
+    .new-button .button-content {
+        height: 50px;
+        border-bottom: 1px solid var(--silver-50);
+    }
+
+    .new-button h3 {
+        color: white;
+    }
+</style>
+{%endblock body%}
