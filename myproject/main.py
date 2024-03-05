@@ -42,5 +42,9 @@ def test_page():
 def diagram():
      return render_template("diagram.html")
 
+@app.route("/spider_diagram")
+def spider_diagram():
+     return render_template("spider_diagram.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
