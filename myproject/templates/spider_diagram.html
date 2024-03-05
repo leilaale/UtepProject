@@ -1,19 +1,19 @@
-{% extends 'admin_template.html' %}
-{% block title %} Administrator {% endblock title %}
-{% block body %}
-    <h1>Spider Diagram</h1>
-    <div id="spider-diagram"></div>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script>
-        // Sample data for categories and values
-        const mainCategory = 'Colleges';
-        const categories = ['Engineering', 'Liberal Arts', 'Science', 'COBA', 'Education'];
-        const values = [4, 3, 2, 5, 4]; // Example data, replace with your own
+<div id="spider-diagram"></div>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+    let mainCategory = 'Colleges'; // Initial main category
+    const categories = ['Engineering', 'Liberal Arts', 'Science', 'COBA', 'Education'];
+    const values = [4, 3, 2, 5, 4]; // Example data, replace with your own
 
-        // Set up dimensions for the spider diagram
-        const diagramWidth = 600; // Set the desired width of the diagram
-        const diagramHeight = 600; // Set the desired height of the diagram
-        const margin = { top: 50, right: 50, bottom: 50, left: 50 };
+    // Set up dimensions for the spider diagram
+    const diagramWidth = 600; // Set the desired width of the diagram
+    const diagramHeight = 600; // Set the desired height of the diagram
+    const margin = { top: 50, right: 50, bottom: 50, left: 50 };
+
+    // Function to draw the spider diagram
+    function drawSpiderDiagram(mainCategory) {
+        // Remove previous diagram
+        d3.select('#spider-diagram').selectAll('*').remove();
 
         // Create SVG element
         const svg = d3.select('#spider-diagram')
@@ -27,7 +27,7 @@
         // Draw lines from main category to subcategories
         const mainCategoryX = diagramWidth / 2;
         const mainCategoryY = diagramHeight / 2;
-        
+
         // Add a box around the main category
         svg.append('rect')
             .attr('x', mainCategoryX - maxTextWidth / 2 - 10) // Adjust the padding
@@ -69,14 +69,9 @@
             .attr('r', maxTextWidth / 2 + 5) // Set the circle radius based on the maximum text width
             .attr('fill', 'blue')
             .on('click', function (event, d) {
-                // Handle the click event
-                d3.select(this)
-                    .transition()
-                    .duration(500) // Animation duration in milliseconds
-                    .attr('r', maxTextWidth / 2 + 10) // Increase circle size
-                    .transition()
-                    .duration(500) // Animation duration in milliseconds
-                    .attr('r', maxTextWidth / 2 + 5); // Restore circle size after animation
+                // Update main category and redraw the diagram
+                mainCategory = d;
+                drawSpiderDiagram(mainCategory);
             });
 
         // Add text labels inside circles for subcategories
@@ -91,21 +86,21 @@
             .attr('dominant-baseline', 'middle')
             .text(d => d)
             .attr('fill', 'white');
+    }
 
-        // Function to calculate the width of the text
-        function getTextWidth(text) {
-            const canvas = document.createElement('canvas');
-            const context = canvas.getContext('2d');
-            context.font = '14px sans-serif'; // Set the font style and size
-            return context.measureText(text).width;
-        }
-    </script>
-    <style>
-        #spider-diagram {
-            margin-top: 20px;
-        }
-        #user_management {
-            background-color: var(--silver-25);
-        }
-    </style>
-{% endblock body %}
+    // Initial drawing of the spider diagram
+    drawSpiderDiagram(mainCategory);
+
+    // Function to calculate the width of the text
+    function getTextWidth(text) {
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        context.font = '14px sans-serif'; // Set the font style and size
+        return context.measureText(text).width;
+    }
+</script>
+<style>
+    #spider-diagram {
+        margin-top: 20px;
+    }
+</style>
