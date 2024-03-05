@@ -2,7 +2,7 @@
 class Word:
     def __init__(self, w, fileName):
         self.word = w
-        self.appearances = 0
+        self.appearances = 1
         self.listOfFiles = [fileName] #file.name
             
         
