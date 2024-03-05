@@ -1,4 +1,40 @@
-<div id="spider-diagram"></div>
+<div id="container">
+    <div id="spider-diagram"></div>
+    <div id="table-container">
+        <table id="data-table">
+            <!-- Table headers -->
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th># of Proposals</th>
+                    <th>Funding Amount</th>
+                    <th>Success Rate</th>
+                </tr>
+            </thead>
+            <!-- Table body will be populated dynamically with JavaScript -->
+            <tbody>
+                <tr>
+                    <td>Engineering</td>
+                    <td>102</td>
+                    <td>$2,000,000</td>
+                    <td>75%</td>
+                </tr>
+                <tr>
+                    <td>Science</td>
+                    <td>54</td>
+                    <td>$1,245,000</td>
+                    <td>65%</td>
+                </tr>
+                <tr>
+                    <td>Nursing</td>
+                    <td>37</td>
+                    <td>$1,100,000</td>
+                    <td>80%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script>
     let mainCategory = 'Colleges'; // Initial main category
@@ -102,5 +138,34 @@
 <style>
     #spider-diagram {
         margin-top: 20px;
+        flex: 1;
+    }
+
+    #container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #table-container {
+        margin-top: 250px;
+        flex: 1;
+        margin-left: 20px;
+        /* Adjust margin as needed */
+    }
+
+    #data-table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #data-table th,
+    #data-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    #data-table th {
+        background-color: #f2f2f2;
     }
 </style>
