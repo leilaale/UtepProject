@@ -15,9 +15,6 @@ keywords_collection = db['keywords']
 file_collection = db['files']
 
 
-
-
-
 users = {
     'adminUser': {'password': 'adminPass', 'role': 'admin'},
     'regularUser': {'password': 'userPass', 'role': 'user'}
@@ -35,7 +32,7 @@ def login_page():
             return redirect(url_for('main_page'))  
         else:
             flash("Invalid username or password")
-        
+
     return render_template("login_page.html")
 
 
@@ -54,18 +51,25 @@ def proposal_upload():
      if request.method == 'POST':
         proposal = request.files['file']
         
+        # extracts keywords from document using keyBert 
+        
         key_list = kb.keywordExtraction(proposal)
         
         for word in key_list:
           
+          # Checks if word exist in the Database, returns 1 if it does
+          
           word_Exist = keywords_collection.count_documents({"word" : word})
           
           if word_Exist == 0:   
+               # Adds new keyword to keyword database
+               
                newKey = Word.Word(word, proposal.filename)
                keywords_collection.insert_one({"word" : newKey.word, "appearances": newKey.appearances, "listOfFiles": newKey.listOfFiles})
           else: 
                
-               # This updates number of appearances              
+               # This updates number of appearances      
+          
                q = {"word" : word}
                getWord = keywords_collection.find_one(q)
                n = getWord['appearances']
@@ -73,11 +77,21 @@ def proposal_upload():
                keywords_collection.update_one(q, newValues)
                
                # Updates listOfFiles Array 
-               keywords_collection.update_one({"word" : word}, { "$push" : { "listOfFiles" : proposal.filename}})
+               
+               q = {"word" : word}
+               getWord = keywords_collection.find_one(q)
+               n = getWord['listOfFiles']
+               
+               if proposal.filename not in n:
+                    keywords_collection.update_one({"word" : word}, { "$push" : { "listOfFiles" : proposal.filename}})
                
       
-        file_collection.insert_one({f'proposal.filename' : proposal.read()})
-        file_collection.insert_one({"File Name": proposal.filename, "Keyword List": key_list, "PDF": proposal.read()})
+        #print("HEEEEEEEEEEEEEEEEEREEEEEE")
+        n = proposal.read()
+        #print(n)
+        #file_collection.insert_one({f'proposal.filename' : proposal.read()})
+        #file_collection.insert_one({"File Name" : proposal.filename, "PDF" : n})
+        file_collection.insert_one({"File Name": proposal.filename, "Keyword List": key_list, "PDF": n})
         
         return render_template('proposal_upload.html', filename=proposal.filename)
      
